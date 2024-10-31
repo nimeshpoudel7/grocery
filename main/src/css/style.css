@@ -3745,12 +3745,7 @@ body.overlay::after {
     max-width: 100%;
   }
 }
-.newsletter-popup .modal {
-  position: relative;
-}
-.newsletter-popup .modal-body {
-  padding: 10px;
-}
+
 .newsletter-popup__text-content {
   padding: 0px 40px;
   text-align: center;
