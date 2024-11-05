@@ -13,7 +13,7 @@
     "tags": ["citrus", "vitamin C", "fresh", "seasonal", "healthy"],
     "numberOfReviews": 245,
     "weight": "1 kg",
-    "image": ""
+    "image": "src/images/products/img-02.png"
   },
   {
     "id": 2,
@@ -27,7 +27,8 @@
     "inStock": true,
     "tags": ["fresh", "crisp", "snack", "healthy", "granny smith"],
     "numberOfReviews": 189,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 3,
@@ -41,7 +42,8 @@
     "inStock": true,
     "tags": ["tropical", "potassium", "sweet", "healthy", "breakfast"],
     "numberOfReviews": 312,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 4,
@@ -55,7 +57,8 @@
     "inStock": true,
     "tags": ["berries", "sweet", "dessert", "smoothie", "seasonal"],
     "numberOfReviews": 178,
-    "weight": "250g"
+    "weight": "250g",
+    "image": "src/images/products/img-03.png"
   },
   {
     "id": 5,
@@ -69,7 +72,8 @@
     "inStock": true,
     "tags": ["berries", "antioxidants", "superfood", "healthy", "snack"],
     "numberOfReviews": 156,
-    "weight": "200g"
+    "weight": "200g",
+    "image": "src/images/products/img-04.png"
   },
   {
     "id": 6,
@@ -83,7 +87,8 @@
     "inStock": true,
     "tags": ["tropical", "sweet", "exotic", "vitamin A", "seasonal"],
     "numberOfReviews": 134,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-05.png"
   },
   {
     "id": 7,
@@ -97,7 +102,8 @@
     "inStock": true,
     "tags": ["root vegetable", "beta-carotene", "healthy", "crunchy", "fresh"],
     "numberOfReviews": 198,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-06.png"
   },
   {
     "id": 8,
@@ -111,7 +117,8 @@
     "inStock": true,
     "tags": ["cruciferous", "healthy", "vitamin C", "fiber", "green"],
     "numberOfReviews": 167,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-07.png"
   },
   {
     "id": 9,
@@ -125,7 +132,8 @@
     "inStock": true,
     "tags": ["leafy greens", "iron", "vitamin K", "salad", "organic"],
     "numberOfReviews": 145,
-    "weight": "250g"
+    "weight": "250g",
+    "image": "src/images/products/img-08.png"
   },
   {
     "id": 10,
@@ -139,7 +147,8 @@
     "inStock": true,
     "tags": ["colorful", "vitamin C", "stir-fry", "crunchy", "fresh"],
     "numberOfReviews": 178,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-09.png"
   },
   {
     "id": 11,
@@ -153,7 +162,8 @@
     "inStock": true,
     "tags": ["dairy", "calcium", "protein", "fresh", "local"],
     "numberOfReviews": 289,
-    "weight": "3.78 L"
+    "weight": "3.78 L",
+    "image": "src/images/products/img-10.png"
   },
   {
     "id": 12,
@@ -167,287 +177,308 @@
     "inStock": true,
     "tags": ["protein", "probiotic", "breakfast", "healthy", "creamy"],
     "numberOfReviews": 234,
-    "weight": "907g"
+    "weight": "907g",
+    "image": "src/images/products/img-11.png"
   },
   {
     "id": 13,
-    "name": "Cheddar Cheese",
+    "name": "Butter",
     "category": "Dairy",
-    "price": 8.99,
-    "original_price": 10.99,
-    "rating": 4.8,
-    "description": "Sharp cheddar cheese, aged to perfection.",
+    "price": 3.99,
+    "original_price": 4.99,
+    "rating": 4.5,
+    "description": "Rich and creamy butter, perfect for cooking and baking.",
     "unit": "per lb",
     "inStock": true,
-    "tags": ["aged", "sharp", "protein", "calcium", "natural"],
-    "numberOfReviews": 267,
-    "weight": "454g"
+    "tags": ["dairy", "cooking", "baking", "creamy", "organic"],
+    "numberOfReviews": 125,
+    "weight": "454g",
+    "image": "src/images/products/img-12.png"
   },
   {
     "id": 14,
-    "name": "Chicken Breast",
-    "category": "Meat",
-    "price": 12.99,
-    "original_price": 14.99,
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "price": 6.99,
+    "original_price": 7.99,
     "rating": 4.6,
-    "description": "Fresh, boneless chicken breast.",
+    "description": "Sharp cheddar cheese, perfect for sandwiches.",
     "unit": "per lb",
     "inStock": true,
-    "tags": ["lean", "protein", "boneless", "fresh", "versatile"],
-    "numberOfReviews": 345,
-    "weight": "454g"
+    "tags": ["dairy", "cheese", "sharp", "snack", "cooking"],
+    "numberOfReviews": 142,
+    "weight": "454g",
+    "image": "src/images/products/img-13.png"
   },
   {
     "id": 15,
-    "name": "Ground Beef",
+    "name": "Chicken Breast",
     "category": "Meat",
     "price": 9.99,
     "original_price": 11.99,
-    "rating": 4.5,
-    "description": "Lean ground beef, perfect for burgers.",
+    "rating": 4.7,
+    "description": "Lean chicken breast, great for healthy meals.",
     "unit": "per lb",
     "inStock": true,
-    "tags": ["lean", "protein", "versatile", "burgers", "fresh"],
-    "numberOfReviews": 298,
-    "weight": "454g"
+    "tags": ["lean", "protein", "cooking", "healthy", "meal prep"],
+    "numberOfReviews": 213,
+    "weight": "454g",
+    "image": "src/images/products/img-14.png"
   },
   {
     "id": 16,
-    "name": "Salmon Fillet",
-    "category": "Seafood",
-    "price": 18.99,
-    "original_price": 21.99,
-    "rating": 4.7,
-    "description": "Fresh Atlantic salmon fillets.",
+    "name": "Ground Beef",
+    "category": "Meat",
+    "price": 8.99,
+    "original_price": 10.99,
+    "rating": 4.4,
+    "description": "Fresh ground beef, ideal for burgers and meatballs.",
     "unit": "per lb",
     "inStock": true,
-    "tags": ["omega-3", "fresh", "protein", "healthy", "fish"],
-    "numberOfReviews": 187,
-    "weight": "454g"
+    "tags": ["beef", "burgers", "protein", "cooking", "meal prep"],
+    "numberOfReviews": 159,
+    "weight": "454g",
+    "image": "src/images/products/img-15.png"
   },
   {
     "id": 17,
-    "name": "Shrimp",
+    "name": "Salmon Fillet",
     "category": "Seafood",
-    "price": 15.99,
-    "original_price": 17.99,
-    "rating": 4.6,
-    "description": "Large peeled and deveined shrimp.",
+    "price": 12.99,
+    "original_price": 14.99,
+    "rating": 4.8,
+    "description": "Fresh salmon fillets rich in omega-3.",
     "unit": "per lb",
     "inStock": true,
-    "tags": ["seafood", "protein", "peeled", "deveined", "fresh"],
-    "numberOfReviews": 165,
-    "weight": "454g"
+    "tags": ["seafood", "omega-3", "healthy", "protein", "cooking"],
+    "numberOfReviews": 276,
+    "weight": "454g",
+    "image": "src/images/products/img-16.png"
   },
   {
     "id": 18,
-    "name": "Whole Grain Bread",
-    "category": "Bakery",
-    "price": 4.99,
-    "original_price": 5.99,
-    "rating": 4.4,
-    "description": "Fresh-baked whole grain bread.",
-    "unit": "per loaf",
+    "name": "Shrimp",
+    "category": "Seafood",
+    "price": 13.99,
+    "original_price": 15.99,
+    "rating": 4.5,
+    "description": "Fresh shrimp, perfect for pasta and salads.",
+    "unit": "per lb",
     "inStock": true,
-    "tags": ["whole grain", "fiber", "fresh", "healthy", "bread"],
-    "numberOfReviews": 223,
-    "weight": "680g"
+    "tags": ["seafood", "protein", "pasta", "salad", "fresh"],
+    "numberOfReviews": 198,
+    "weight": "454g",
+    "image": "src/images/products/img-17.png"
   },
   {
     "id": 19,
-    "name": "Croissant",
+    "name": "Whole Wheat Bread",
     "category": "Bakery",
     "price": 2.99,
-    "original_price": 3.99,
-    "rating": 4.7,
-    "description": "Buttery, flaky croissants baked daily.",
-    "unit": "4 pack",
+    "original_price": 3.49,
+    "rating": 4.6,
+    "description": "Healthy whole wheat bread.",
+    "unit": "per loaf",
     "inStock": true,
-    "tags": ["breakfast", "buttery", "flaky", "fresh", "pastry"],
-    "numberOfReviews": 178,
-    "weight": "240g"
+    "tags": ["bread", "whole wheat", "healthy", "baking", "fiber"],
+    "numberOfReviews": 112,
+    "weight": "500g",
+    "image": "src/images/products/img-18.png"
   },
   {
     "id": 20,
-    "name": "Pasta",
-    "category": "Pantry",
-    "price": 2.99,
-    "original_price": 3.99,
+    "name": "Bagels",
+    "category": "Bakery",
+    "price": 3.49,
+    "original_price": 4.49,
     "rating": 4.5,
-    "description": "Premium Italian pasta.",
-    "unit": "16 oz",
+    "description": "Assorted bagels, perfect for breakfast.",
+    "unit": "per pack",
     "inStock": true,
-    "tags": ["Italian", "pantry", "staple", "pasta", "carbs"],
-    "numberOfReviews": 345,
-    "weight": "454g"
+    "tags": ["breakfast", "snack", "assorted", "baking", "organic"],
+    "numberOfReviews": 102,
+    "weight": "6-pack",
+    "image": "src/images/products/img-19.png"
   },
   {
     "id": 21,
-    "name": "Rice",
-    "category": "Pantry",
-    "price": 6.99,
-    "original_price": 8.99,
-    "rating": 4.6,
-    "description": "Premium jasmine rice.",
-    "unit": "5 lb",
+    "name": "Oatmeal",
+    "category": "Grains",
+    "price": 4.99,
+    "original_price": 5.99,
+    "rating": 4.8,
+    "description": "Healthy oatmeal rich in fiber.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["jasmine", "staple", "grain", "pantry", "Asian"],
-    "numberOfReviews": 287,
-    "weight": "2.27 kg"
+    "tags": ["fiber", "healthy", "breakfast", "organic", "energy"],
+    "numberOfReviews": 98,
+    "weight": "1 kg",
+    "image": "src/images/products/img-10.png"
   },
   {
     "id": 22,
-    "name": "Olive Oil",
-    "category": "Pantry",
-    "price": 12.99,
-    "original_price": 14.99,
-    "rating": 4.8,
-    "description": "Extra virgin olive oil from Italy.",
-    "unit": "16.9 fl oz",
+    "name": "Brown Rice",
+    "category": "Grains",
+    "price": 3.99,
+    "original_price": 4.49,
+    "rating": 4.4,
+    "description": "Nutritious brown rice for healthy meals.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["Italian", "extra virgin", "cooking", "healthy", "premium"],
-    "numberOfReviews": 198,
-    "weight": "500ml"
+    "tags": ["fiber", "organic", "whole grain", "healthy", "meal prep"],
+    "numberOfReviews": 87,
+    "weight": "1 kg",
+    "image": "src/images/products/img-11.png"
   },
   {
     "id": 23,
-    "name": "Potato Chips",
-    "category": "Snacks",
-    "price": 3.99,
-    "original_price": 4.99,
-    "rating": 4.4,
-    "description": "Classic potato chips, crispy and salted.",
-    "unit": "8 oz",
+    "name": "Quinoa",
+    "category": "Grains",
+    "price": 5.99,
+    "original_price": 6.99,
+    "rating": 4.6,
+    "description": "Organic quinoa, a great source of protein.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["snack", "crispy", "salty", "classic", "chips"],
-    "numberOfReviews": 456,
-    "weight": "227g"
+    "tags": ["protein", "organic", "gluten-free", "healthy", "superfood"],
+    "numberOfReviews": 92,
+    "weight": "1 kg",
+    "image": "src/images/products/img-12.png"
   },
   {
     "id": 24,
-    "name": "Mixed Nuts",
-    "category": "Snacks",
+    "name": "Almonds",
+    "category": "Nuts",
     "price": 9.99,
-    "original_price": 11.99,
-    "rating": 4.6,
-    "description": "Premium mixed nuts, roasted and salted.",
-    "unit": "16 oz",
+    "original_price": 10.99,
+    "rating": 4.7,
+    "description": "Crunchy almonds, rich in protein and healthy fats.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["nuts", "protein", "healthy", "snack", "roasted"],
-    "numberOfReviews": 234,
-    "weight": "454g"
+    "tags": ["protein", "healthy fats", "snack", "crunchy", "organic"],
+    "numberOfReviews": 130,
+    "weight": "500g",
+    "image": "src/images/products/img-03.png"
   },
   {
     "id": 25,
-    "name": "Ice Cream",
-    "category": "Frozen",
-    "price": 5.99,
-    "original_price": 6.99,
-    "rating": 4.7,
-    "description": "Premium vanilla ice cream.",
-    "unit": "half gallon",
+    "name": "Peanuts",
+    "category": "Nuts",
+    "price": 4.99,
+    "original_price": 5.99,
+    "rating": 4.5,
+    "description": "Roasted peanuts, perfect for snacking.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["dessert", "frozen", "vanilla", "creamy", "sweet"],
-    "numberOfReviews": 387,
-    "weight": "1.89 L"
+    "tags": ["snack", "protein", "roasted", "healthy", "crunchy"],
+    "numberOfReviews": 104,
+    "weight": "500g",
+    "image": "src/images/products/img-04.png"
   },
   {
     "id": 26,
-    "name": "Frozen Pizza",
-    "category": "Frozen",
+    "name": "Cashews",
+    "category": "Nuts",
     "price": 7.99,
-    "original_price": 9.99,
-    "rating": 4.3,
-    "description": "Pepperoni pizza, ready to bake.",
-    "unit": "12 inch",
+    "original_price": 8.99,
+    "rating": 4.6,
+    "description": "Rich and creamy cashews, perfect for snacking.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["pizza", "frozen", "pepperoni", "quick", "convenient"],
-    "numberOfReviews": 289,
-    "weight": "400g"
+    "tags": ["creamy", "snack", "protein", "healthy fats", "organic"],
+    "numberOfReviews": 117,
+    "weight": "500g",
+    "image": "src/images/products/img-05.png"
   },
   {
     "id": 27,
-    "name": "Orange Juice",
-    "category": "Beverages",
-    "price": 4.99,
-    "original_price": 5.99,
+    "name": "Dark Chocolate",
+    "category": "Snacks",
+    "price": 2.99,
+    "original_price": 3.49,
     "rating": 4.6,
-    "description": "100% pure squeezed orange juice.",
-    "unit": "64 fl oz",
+    "description": "Rich dark chocolate, perfect for a sweet treat.",
+    "unit": "per bar",
     "inStock": true,
-    "tags": ["juice", "breakfast", "vitamin C", "fresh", "natural"],
-    "numberOfReviews": 234,
-    "weight": "1.89 L"
+    "tags": ["chocolate", "sweet", "snack", "indulgent", "healthy"],
+    "numberOfReviews": 112,
+    "weight": "100g",
+    "image": "src/images/products/img-06.png"
   },
   {
     "id": 28,
-    "name": "Coffee Beans",
-    "category": "Beverages",
-    "price": 12.99,
-    "original_price": 14.99,
-    "rating": 4.8,
-    "description": "Premium Colombian coffee beans.",
-    "unit": "12 oz",
+    "name": "Granola Bars",
+    "category": "Snacks",
+    "price": 3.49,
+    "original_price": 4.49,
+    "rating": 4.5,
+    "description": "Healthy granola bars, perfect for on-the-go.",
+    "unit": "per pack",
     "inStock": true,
-    "tags": ["coffee", "beans", "premium", "Colombian", "beverage"],
-    "numberOfReviews": 278,
-    "weight": "340g"
+    "tags": ["healthy", "snack", "on-the-go", "fiber", "organic"],
+    "numberOfReviews": 106,
+    "weight": "6-pack",
+    "image": "src/images/products/img-07.png"
   },
   {
     "id": 29,
-    "name": "Honey",
-    "category": "Condiments",
-    "price": 8.99,
-    "original_price": 10.99,
+    "name": "Mixed Berries",
+    "category": "Frozen Foods",
+    "price": 6.99,
+    "original_price": 7.99,
     "rating": 4.7,
-    "description": "Pure, raw honey from local beekeepers.",
-    "unit": "16 oz",
+    "description": "Frozen mixed berries, great for smoothies.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["natural", "sweet", "local", "raw", "condiment"],
-    "numberOfReviews": 201,
-    "weight": "454g"
+    "tags": ["berries", "smoothie", "healthy", "frozen", "organic"],
+    "numberOfReviews": 136,
+    "weight": "1 kg",
+    "image": "src/images/products/img-08.png"
   },
   {
     "id": 30,
-    "name": "Ketchup",
-    "category": "Condiments",
+    "name": "Frozen Peas",
+    "category": "Frozen Foods",
     "price": 3.99,
-    "original_price": 4.99,
+    "original_price": 4.49,
     "rating": 4.4,
-    "description": "Classic tomato ketchup.",
-    "unit": "32 oz",
+    "description": "Frozen peas, perfect for cooking and meals.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["condiment", "tomato", "classic", "savory", "pantry"],
-    "numberOfReviews": 312,
-    "weight": "946ml"
+    "tags": ["peas", "vegetable", "healthy", "frozen", "cooking"],
+    "numberOfReviews": 99,
+    "weight": "1 kg",
+    "image": "src/images/products/img-12.png"
   },
   {
     "id": 31,
-    "name": "Granola",
-    "category": "Breakfast",
-    "price": 5.99,
-    "original_price": 7.99,
-    "rating": 4.5,
-    "description": "Crunchy granola with nuts and dried fruits.",
-    "unit": "12 oz",
+    "name": "Frozen Spinach",
+    "category": "Frozen Foods",
+    "price": 4.49,
+    "original_price": 5.49,
+    "rating": 4.6,
+    "description": "Frozen spinach, ideal for cooking.",
+    "unit": "per bag",
     "inStock": true,
-    "tags": ["breakfast", "crunchy", "nuts", "dried fruit", "healthy"],
-    "numberOfReviews": 178,
-    "weight": "340g"
+    "tags": ["spinach", "healthy", "frozen", "vegetable", "organic"],
+    "numberOfReviews": 107,
+    "weight": "1 kg",
+    "image": "src/images/products/img-10.png"
   },
   {
     "id": 32,
-    "name": "Cereal",
-    "category": "Breakfast",
-    "price": 4.99,
-    "original_price": 5.99,
-    "rating": 4.3,
-    "description": "Whole grain breakfast cereal.",
-    "unit": "18 oz",
+    "name": "Ice Cream",
+    "category": "Frozen Foods",
+    "price": 5.99,
+    "original_price": 6.99,
+    "rating": 4.8,
+    "description": "Delicious ice cream for dessert.",
+    "unit": "per tub",
     "inStock": true,
-    "tags": ["breakfast", "whole grain", "fiber", "healthy", "morning"],
-    "numberOfReviews": 289,
-    "weight": "510g"
+    "tags": ["dessert", "sweet", "frozen", "treat", "indulgent"],
+    "numberOfReviews": 152,
+    "weight": "1 L",
+    "image": "src/images/products/img-11.png"
   },
   {
     "id": 33,
@@ -461,7 +492,9 @@
     "inStock": true,
     "tags": ["household", "cleaning", "absorbent", "paper", "towels"],
     "numberOfReviews": 167,
-    "weight": "2.04 kg"
+    "weight": "2.04 kg",
+    "image": "src/images/products/img-01.png"
+
   },
   {
     "id": 34,
@@ -475,7 +508,8 @@
     "inStock": true,
     "tags": ["household", "cleaning", "dish", "soap", "concentrated"],
     "numberOfReviews": 145,
-    "weight": "710ml"
+    "weight": "710ml",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 35,
@@ -489,7 +523,8 @@
     "inStock": true,
     "tags": ["pet", "dog", "food", "premium", "meat"],
     "numberOfReviews": 178,
-    "weight": "6.8 kg"
+    "weight": "6.8 kg",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 36,
@@ -503,7 +538,8 @@
     "inStock": true,
     "tags": ["pet", "cat", "litter", "clumping", "dust-free"],
     "numberOfReviews": 156,
-    "weight": "9.07 kg"
+    "weight": "9.07 kg",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 37,
@@ -517,7 +553,8 @@
     "inStock": true,
     "tags": ["medicine", "pain relief", "fever", "pharmacy", "health"],
     "numberOfReviews": 134,
-    "weight": "100g"
+    "weight": "100g",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 38,
@@ -531,7 +568,8 @@
     "inStock": true,
     "tags": ["first aid", "adhesive", "bandages", "pharmacy", "health"],
     "numberOfReviews": 198,
-    "weight": "80g"
+    "weight": "80g",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 39,
@@ -545,7 +583,8 @@
     "inStock": true,
     "tags": ["tea", "green", "organic", "healthy", "beverage"],
     "numberOfReviews": 167,
-    "weight": "40g"
+    "weight": "40g",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 40,
@@ -559,7 +598,8 @@
     "inStock": true,
     "tags": ["grain", "quinoa", "organic", "protein", "healthy"],
     "numberOfReviews": 145,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 41,
@@ -573,7 +613,8 @@
     "inStock": true,
     "tags": ["produce", "avocado", "healthy", "superfood", "fresh"],
     "numberOfReviews": 178,
-    "weight": "200g"
+    "weight": "200g",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 42,
@@ -587,6 +628,7 @@
     "inStock": true,
     "tags": ["kombucha", "fermented", "probiotic", "healthy", "drink"],
     "numberOfReviews": 156,
-    "weight": "473ml"
+    "weight": "473ml",
+    "image": "src/images/products/img-01.png"
   }
 ]
