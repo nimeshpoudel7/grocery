@@ -59,6 +59,30 @@ app.post("/login", (req, res) => {
   });
 });
 
+app.get("/products", (req, res) => {
+  fs.readFile("Product.json", "utf8", (err, data) => {
+    if (err)
+      return res.status(500).json({ message: "Error reading products." });
+    res.json(JSON.parse(data));
+  });
+});
+app.get("/product", (req, res) => {
+  const productId = req.query.id; // Get the ID from the query parameter
+
+  fs.readFile("Product.json", "utf8", (err, data) => {
+    if (err)
+      return res.status(500).json({ message: "Error reading products." });
+
+    const products = JSON.parse(data);
+    const product = products.find((p) => p.id === parseInt(productId)); // Find product by ID
+
+    if (!product) {
+      return res.status(404).json({ message: "Product not found." });
+    }
+
+    res.json(product); // Return the found product
+  });
+});
 const PORT = 3000;
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
