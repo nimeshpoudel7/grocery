@@ -115,6 +115,37 @@ app.get("/popular-product", (req, res) => {
     res.json(product);
   });
 });
+app.get("/categories", (req, res) => {
+  fs.readFile("Product.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).json({ message: "Error reading products." });
+    }
+
+    const products = JSON.parse(data);
+
+    const categories = [];
+    const categoryMap = {};
+
+    products.forEach((product) => {
+      if (!categoryMap[product.category]) {
+        categoryMap[product.category] = {
+          categoryId: product.categoryId,
+          image: product.image,
+        };
+      }
+    });
+
+    for (const [category, details] of Object.entries(categoryMap)) {
+      categories.push({
+        category,
+        categoryId: details.categoryId,
+        image: details.image,
+      });
+    }
+
+    res.json(categories.slice(0, 12));
+  });
+});
 
 app.get("/product", (req, res) => {
   const productId = req.query.id;
