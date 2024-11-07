@@ -102,6 +102,18 @@ app.get("/products", (req, res) => {
     res.json(JSON.parse(data));
   });
 });
+app.get("/popular-product", (req, res) => {
+  fs.readFile("Product.json", "utf8", (err, data) => {
+    if (err)
+      return res.status(500).json({ message: "Error reading products." });
+    const products = JSON.parse(data);
+    const product = products.filter((p) => p.rating > 4.7);
+    if (!product) {
+      return res.status(404).json({ message: "Product not found." });
+    }
+
+    res.json(product);  });
+});
 
 app.get("/product", (req, res) => {
   const productId = req.query.id;
