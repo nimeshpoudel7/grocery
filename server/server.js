@@ -1,12 +1,21 @@
 import express from "express";
 import fs from "fs";
 import cors from "cors";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+
 const app = express();
+const SECRET_KEY = "LKKNJJANNAHHHWBBHHHBSH8980211250OPIH"; // Replace with a strong secret key
+const PORT = 3000;
+
 app.use(cors());
 app.use(express.json());
 
-app.post("/register", (req, res) => {
+app.post("/register", async (req, res) => {
   const { email, password } = req.body;
+
+  // Hash password with bcrypt
+  const hashedPassword = await bcrypt.hash(password, 10);
 
   // Read users data
   fs.readFile("users.json", "utf8", (err, data) => {
@@ -22,7 +31,7 @@ app.post("/register", (req, res) => {
       return res.json({ success: false, message: "Email already exists." });
     }
 
-    users.push({ email, password });
+    users.push({ email, password: hashedPassword });
 
     fs.writeFile("users.json", JSON.stringify(users, null, 2), (err) => {
       if (err) {
@@ -34,11 +43,12 @@ app.post("/register", (req, res) => {
     });
   });
 });
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
   // Read users data
-  fs.readFile("users.json", "utf8", (err, data) => {
+  fs.readFile("users.json", "utf8", async (err, data) => {
     if (err) {
       console.log(err);
       return res.status(500).json({ message: "Error reading user data." });
@@ -46,19 +56,44 @@ app.post("/login", (req, res) => {
 
     const users = JSON.parse(data || "[]");
 
-    // Check if the user exists and password matches
-    const user = users.find(
-      (user) => user.email === email && user.password === password
-    );
-    if (user) {
-      return res.json({ success: true, message: "Login successful." });
-    } else {
+    // Find the user by email
+    const user = users.find((user) => user.email === email);
+    if (!user) {
       return res
-        .status(401)
+        .status(200)
         .json({ success: false, message: "Invalid email or password." });
     }
+
+    // Compare the provided password with the hashed password
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+    if (!isPasswordValid) {
+      return res
+        .status(200)
+        .json({ success: false, message: "Invalid email or password." });
+    }
+
+    // Generate JWT token
+    const token = jwt.sign({ email: user.email }, SECRET_KEY, {
+      expiresIn: "1h",
+    });
+
+    res.json({ success: true, message: "Login successful.", token });
   });
 });
+
+// Middleware to verify JWT
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+
+  if (!token) return res.status(401).json({ message: "Access denied." });
+
+  jwt.verify(token, SECRET_KEY, (err, user) => {
+    if (err) return res.status(403).json({ message: "Invalid token." });
+    req.user = user;
+    next();
+  });
+}
 
 app.get("/products", (req, res) => {
   fs.readFile("Product.json", "utf8", (err, data) => {
@@ -67,24 +102,25 @@ app.get("/products", (req, res) => {
     res.json(JSON.parse(data));
   });
 });
+
 app.get("/product", (req, res) => {
-  const productId = req.query.id; // Get the ID from the query parameter
+  const productId = req.query.id;
 
   fs.readFile("Product.json", "utf8", (err, data) => {
     if (err)
       return res.status(500).json({ message: "Error reading products." });
 
     const products = JSON.parse(data);
-    const product = products.find((p) => p.id === parseInt(productId)); // Find product by ID
+    const product = products.find((p) => p.id === parseInt(productId));
 
     if (!product) {
       return res.status(404).json({ message: "Product not found." });
     }
 
-    res.json(product); // Return the found product
+    res.json(product);
   });
 });
-const PORT = 3000;
+
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );

@@ -10,5 +10,13 @@
   {
     "email": "kusmesh@gmail.com",
     "password": "aa"
+  },
+  {
+    "email": "test@gmail.com",
+    "password": "$2b$10$efOq4wvsfTyM6d.L3QxeL.fprXjviPsy4xgn5xY1BWq0nUAJKXO7G"
+  },
+  {
+    "email": "test1@gmail.com",
+    "password": "$2b$10$nKncznM6xSCSL6.lLFmNpO.Ol/HEGgP6a3GlBbJS5znXg4OAxxApi"
   }
 ]

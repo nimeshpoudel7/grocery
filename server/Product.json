@@ -13,7 +13,7 @@
     "tags": ["citrus", "vitamin C", "fresh", "seasonal", "healthy"],
     "numberOfReviews": 245,
     "weight": "1 kg",
-    "image": ""
+    "image": "src/images/products/img-02.png"
   },
   {
     "id": 2,
@@ -27,7 +27,8 @@
     "inStock": true,
     "tags": ["fresh", "crisp", "snack", "healthy", "granny smith"],
     "numberOfReviews": 189,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-01.png"
   },
   {
     "id": 3,
@@ -41,7 +42,8 @@
     "inStock": true,
     "tags": ["tropical", "potassium", "sweet", "healthy", "breakfast"],
     "numberOfReviews": 312,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-03.jpeg"
   },
   {
     "id": 4,
@@ -55,7 +57,8 @@
     "inStock": true,
     "tags": ["berries", "sweet", "dessert", "smoothie", "seasonal"],
     "numberOfReviews": 178,
-    "weight": "250g"
+    "weight": "250g",
+    "image": "src/images/products/img-04.jpg"
   },
   {
     "id": 5,
@@ -69,7 +72,8 @@
     "inStock": true,
     "tags": ["berries", "antioxidants", "superfood", "healthy", "snack"],
     "numberOfReviews": 156,
-    "weight": "200g"
+    "weight": "200g",
+    "image": "src/images/products/img-05.jpg"
   },
   {
     "id": 6,
@@ -83,7 +87,8 @@
     "inStock": true,
     "tags": ["tropical", "sweet", "exotic", "vitamin A", "seasonal"],
     "numberOfReviews": 134,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-06.jpg"
   },
   {
     "id": 7,
@@ -97,7 +102,8 @@
     "inStock": true,
     "tags": ["root vegetable", "beta-carotene", "healthy", "crunchy", "fresh"],
     "numberOfReviews": 198,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-07.jpg"
   },
   {
     "id": 8,
@@ -111,7 +117,8 @@
     "inStock": true,
     "tags": ["cruciferous", "healthy", "vitamin C", "fiber", "green"],
     "numberOfReviews": 167,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-08.jpg"
   },
   {
     "id": 9,
@@ -125,7 +132,8 @@
     "inStock": true,
     "tags": ["leafy greens", "iron", "vitamin K", "salad", "organic"],
     "numberOfReviews": 145,
-    "weight": "250g"
+    "weight": "250g",
+    "image": "src/images/products/img-09.png"
   },
   {
     "id": 10,
@@ -139,7 +147,8 @@
     "inStock": true,
     "tags": ["colorful", "vitamin C", "stir-fry", "crunchy", "fresh"],
     "numberOfReviews": 178,
-    "weight": "1 kg"
+    "weight": "1 kg",
+    "image": "src/images/products/img-10.png"
   },
   {
     "id": 11,
@@ -153,7 +162,8 @@
     "inStock": true,
     "tags": ["dairy", "calcium", "protein", "fresh", "local"],
     "numberOfReviews": 289,
-    "weight": "3.78 L"
+    "weight": "3.78 L",
+    "image": "src/images/products/img-11.jpg"
   },
   {
     "id": 12,
@@ -167,7 +177,8 @@
     "inStock": true,
     "tags": ["protein", "probiotic", "breakfast", "healthy", "creamy"],
     "numberOfReviews": 234,
-    "weight": "907g"
+    "weight": "907g",
+    "image": "src/images/products/img-12.png"
   },
   {
     "id": 13,
@@ -181,7 +192,8 @@
     "inStock": true,
     "tags": ["aged", "sharp", "protein", "calcium", "natural"],
     "numberOfReviews": 267,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-13.png"
   },
   {
     "id": 14,
@@ -195,7 +207,8 @@
     "inStock": true,
     "tags": ["lean", "protein", "boneless", "fresh", "versatile"],
     "numberOfReviews": 345,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-14.png"
   },
   {
     "id": 15,
@@ -209,7 +222,8 @@
     "inStock": true,
     "tags": ["lean", "protein", "versatile", "burgers", "fresh"],
     "numberOfReviews": 298,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-15.png"
   },
   {
     "id": 16,
@@ -223,7 +237,8 @@
     "inStock": true,
     "tags": ["omega-3", "fresh", "protein", "healthy", "fish"],
     "numberOfReviews": 187,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-16.jpg"
   },
   {
     "id": 17,
@@ -237,10 +252,11 @@
     "inStock": true,
     "tags": ["seafood", "protein", "peeled", "deveined", "fresh"],
     "numberOfReviews": 165,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-17.png"
   },
   {
-    "id": 18,
+       "id": 18,
     "name": "Whole Grain Bread",
     "category": "Bakery",
     "price": 4.99,
@@ -251,7 +267,8 @@
     "inStock": true,
     "tags": ["whole grain", "fiber", "fresh", "healthy", "bread"],
     "numberOfReviews": 223,
-    "weight": "680g"
+    "weight": "680g",
+    "image": "src/images/products/img-18.jpg"
   },
   {
     "id": 19,
@@ -265,7 +282,8 @@
     "inStock": true,
     "tags": ["breakfast", "buttery", "flaky", "fresh", "pastry"],
     "numberOfReviews": 178,
-    "weight": "240g"
+    "weight": "240g",
+    "image": "src/images/products/img-19.jpg"
   },
   {
     "id": 20,
@@ -279,10 +297,11 @@
     "inStock": true,
     "tags": ["Italian", "pantry", "staple", "pasta", "carbs"],
     "numberOfReviews": 345,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-20.jpg"
   },
   {
-    "id": 21,
+   "id": 21,
     "name": "Rice",
     "category": "Pantry",
     "price": 6.99,
@@ -293,7 +312,8 @@
     "inStock": true,
     "tags": ["jasmine", "staple", "grain", "pantry", "Asian"],
     "numberOfReviews": 287,
-    "weight": "2.27 kg"
+    "weight": "2.27 kg",
+    "image": "src/images/products/img-21.jpg"
   },
   {
     "id": 22,
@@ -307,10 +327,11 @@
     "inStock": true,
     "tags": ["Italian", "extra virgin", "cooking", "healthy", "premium"],
     "numberOfReviews": 198,
-    "weight": "500ml"
+    "weight": "500ml",
+    "image": "src/images/products/img-22.png"
   },
   {
-    "id": 23,
+     "id": 23,
     "name": "Potato Chips",
     "category": "Snacks",
     "price": 3.99,
@@ -321,7 +342,8 @@
     "inStock": true,
     "tags": ["snack", "crispy", "salty", "classic", "chips"],
     "numberOfReviews": 456,
-    "weight": "227g"
+    "weight": "227g",
+    "image": "src/images/products/img-23.jpg"
   },
   {
     "id": 24,
@@ -335,10 +357,11 @@
     "inStock": true,
     "tags": ["nuts", "protein", "healthy", "snack", "roasted"],
     "numberOfReviews": 234,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-24.png"
   },
   {
-    "id": 25,
+     "id": 25,
     "name": "Ice Cream",
     "category": "Frozen",
     "price": 5.99,
@@ -349,7 +372,8 @@
     "inStock": true,
     "tags": ["dessert", "frozen", "vanilla", "creamy", "sweet"],
     "numberOfReviews": 387,
-    "weight": "1.89 L"
+    "weight": "1.89 L",
+    "image": "src/images/products/img-25.png"
   },
   {
     "id": 26,
@@ -363,7 +387,8 @@
     "inStock": true,
     "tags": ["pizza", "frozen", "pepperoni", "quick", "convenient"],
     "numberOfReviews": 289,
-    "weight": "400g"
+    "weight": "400g",
+    "image": "src/images/products/img-260.jpg"
   },
   {
     "id": 27,
@@ -377,10 +402,11 @@
     "inStock": true,
     "tags": ["juice", "breakfast", "vitamin C", "fresh", "natural"],
     "numberOfReviews": 234,
-    "weight": "1.89 L"
+    "weight": "1.89 L",
+    "image": "src/images/products/img-27.jpg"
   },
   {
-    "id": 28,
+   "id": 28,
     "name": "Coffee Beans",
     "category": "Beverages",
     "price": 12.99,
@@ -391,7 +417,8 @@
     "inStock": true,
     "tags": ["coffee", "beans", "premium", "Colombian", "beverage"],
     "numberOfReviews": 278,
-    "weight": "340g"
+    "weight": "340g",
+    "image": "src/images/products/img-28.jpg"
   },
   {
     "id": 29,
@@ -405,7 +432,8 @@
     "inStock": true,
     "tags": ["natural", "sweet", "local", "raw", "condiment"],
     "numberOfReviews": 201,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-29.jpg"
   },
   {
     "id": 30,
@@ -419,7 +447,8 @@
     "inStock": true,
     "tags": ["condiment", "tomato", "classic", "savory", "pantry"],
     "numberOfReviews": 312,
-    "weight": "946ml"
+    "weight": "946ml",
+    "image": "src/images/products/img-30.jpg"
   },
   {
     "id": 31,
@@ -433,7 +462,8 @@
     "inStock": true,
     "tags": ["breakfast", "crunchy", "nuts", "dried fruit", "healthy"],
     "numberOfReviews": 178,
-    "weight": "340g"
+    "weight": "340g",
+    "image": "src/images/products/img-31.jpg"
   },
   {
     "id": 32,
@@ -447,7 +477,8 @@
     "inStock": true,
     "tags": ["breakfast", "whole grain", "fiber", "healthy", "morning"],
     "numberOfReviews": 289,
-    "weight": "510g"
+    "weight": "510g",
+    "image": "src/images/products/img-32.png"
   },
   {
     "id": 33,
@@ -461,7 +492,9 @@
     "inStock": true,
     "tags": ["household", "cleaning", "absorbent", "paper", "towels"],
     "numberOfReviews": 167,
-    "weight": "2.04 kg"
+    "weight": "2.04 kg",
+    "image": "src/images/products/img-33.jpg"
+
   },
   {
     "id": 34,
@@ -475,7 +508,8 @@
     "inStock": true,
     "tags": ["household", "cleaning", "dish", "soap", "concentrated"],
     "numberOfReviews": 145,
-    "weight": "710ml"
+    "weight": "710ml",
+    "image": "src/images/products/img-34.png"
   },
   {
     "id": 35,
@@ -489,7 +523,8 @@
     "inStock": true,
     "tags": ["pet", "dog", "food", "premium", "meat"],
     "numberOfReviews": 178,
-    "weight": "6.8 kg"
+    "weight": "6.8 kg",
+    "image": "src/images/products/img-035.jpeg"
   },
   {
     "id": 36,
@@ -503,7 +538,8 @@
     "inStock": true,
     "tags": ["pet", "cat", "litter", "clumping", "dust-free"],
     "numberOfReviews": 156,
-    "weight": "9.07 kg"
+    "weight": "9.07 kg",
+    "image": "src/images/products/img-36.jpg"
   },
   {
     "id": 37,
@@ -517,7 +553,8 @@
     "inStock": true,
     "tags": ["medicine", "pain relief", "fever", "pharmacy", "health"],
     "numberOfReviews": 134,
-    "weight": "100g"
+    "weight": "100g",
+    "image": "src/images/products/img-37.jpg"
   },
   {
     "id": 38,
@@ -531,7 +568,8 @@
     "inStock": true,
     "tags": ["first aid", "adhesive", "bandages", "pharmacy", "health"],
     "numberOfReviews": 198,
-    "weight": "80g"
+    "weight": "80g",
+    "image": "src/images/products/img-38.jpeg"
   },
   {
     "id": 39,
@@ -545,7 +583,8 @@
     "inStock": true,
     "tags": ["tea", "green", "organic", "healthy", "beverage"],
     "numberOfReviews": 167,
-    "weight": "40g"
+    "weight": "40g",
+    "image": "src/images/products/img-39.jpg"
   },
   {
     "id": 40,
@@ -559,7 +598,8 @@
     "inStock": true,
     "tags": ["grain", "quinoa", "organic", "protein", "healthy"],
     "numberOfReviews": 145,
-    "weight": "454g"
+    "weight": "454g",
+    "image": "src/images/products/img-40.jpg"
   },
   {
     "id": 41,
@@ -573,7 +613,8 @@
     "inStock": true,
     "tags": ["produce", "avocado", "healthy", "superfood", "fresh"],
     "numberOfReviews": 178,
-    "weight": "200g"
+    "weight": "200g",
+    "image": "src/images/products/img-41.jpg"
   },
   {
     "id": 42,
@@ -587,6 +628,7 @@
     "inStock": true,
     "tags": ["kombucha", "fermented", "probiotic", "healthy", "drink"],
     "numberOfReviews": 156,
-    "weight": "473ml"
+    "weight": "473ml",
+    "image": "src/images/products/img-42.png"
   }
 ]
