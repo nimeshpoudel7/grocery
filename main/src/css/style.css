@@ -1473,7 +1473,7 @@ a {
   padding-left: 5px;
 }
 @media (max-width: 575px) {
-  .header--four .header__cart-item-content-info {
+  .profileLogo .header--four .header__cart-item-content-info {
     display: none;
   }
 }
