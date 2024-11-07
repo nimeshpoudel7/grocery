@@ -383,7 +383,7 @@ function renderProducts() {
               <div class="cards-md cards-md--four w-100">
                   <div class="cards-md__img-wrapper">
                       <a href="product-details.html?id=${product.id}">
-                                                              <img src="src/images/products/img-02.png" alt="products" />
+                                                              <img src=${product?.image} alt="products" />
 
                       </a>
                       
