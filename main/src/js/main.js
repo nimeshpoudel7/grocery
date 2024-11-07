@@ -383,7 +383,9 @@ function renderProducts() {
               <div class="cards-md cards-md--four w-100">
                   <div class="cards-md__img-wrapper">
                       <a href="product-details.html?id=${product.id}">
-                                                              <img src=${product?.image} alt="products" />
+                                                              <img src=${
+                                                                product?.image
+                                                              } alt="products" />
 
                       </a>
                       
@@ -498,8 +500,9 @@ async function fetchProducts() {
                     
 
                         <div class="gallery-main-image products__gallery-img--lg">
-                            <img class="product-main-image" src="src/images/product-details/img-01.png"
-                                alt="Slide 01" />
+                            <img class="product-main-image" src=${
+                              product?.image
+                            } alt="products"/>
                         </div>
                     </div>
                 </div>
