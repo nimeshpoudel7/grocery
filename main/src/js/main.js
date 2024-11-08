@@ -572,9 +572,8 @@ async function fetchProducts() {
                                     } Review</a>
                                 </li>
                             </ul>
-                            <span class="dot">.</span>
-                            <h5 class="font-body--md-500">Sku: <span class="counting font-body--md-400">2,51,594</span>
-                            </h5>
+                            <span class="dot"></span>
+                           
                         </div>
 
                         <div class="products__content-price">
@@ -862,7 +861,7 @@ function randomProducts() {
     method: "GET",
     redirect: "follow",
   };
-  const classes = ["one", "two", "three", "four","five"];
+  const classes = ["one", "two", "three", "four", "five"];
   fetch("http://localhost:3000/random-products", requestOptions)
     .then((response) => response.json())
     .then((products) => {
