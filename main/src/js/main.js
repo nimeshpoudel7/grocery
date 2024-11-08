@@ -393,7 +393,9 @@ ${
   product?.discount
     ? `<span class="tag danger font-body--md-400">sale ${product.discount}</span>`
     : ""
-}                      <div class="cards-md__favs-list">
+}                      <div class="cards-md__favs-list"  onclick="handleFavsListClick(event,${
+          product.id
+        })">
                           <span class="action-btn">
                           <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1082,4 +1084,36 @@ function categorieProducts() {
         );
       });
     });
+}
+
+function handleFavsListClick(e, productId) {
+  console.log(e);
+  e.preventDefault();
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  const token = localStorage.getItem("LoginToken");
+  myHeaders.append("Authorization", `Bearer ${token}`);
+  const raw = JSON.stringify({
+    productId: productId,
+  });
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+    redirect: "follow",
+  };
+
+  fetch("http://localhost:3000/wishlist/add", requestOptions)
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+      if (result.success) {
+        showSnackbar(result.message, true);
+      } else {
+        showSnackbar(result.message, false);
+      }
+    })
+    .catch((error) => console.error(error));
+  return false;
 }
