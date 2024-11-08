@@ -179,6 +179,41 @@ app.get("/random-products", (req, res) => {
   });
 });
 
+app.post("/wishlist/add", authenticateToken, (req, res) => {
+  const { productId, quality, discount } = req.body;
+  const userEmail = req.user.email;
+
+  fs.readFile("users.json", "utf8", (err, data) => {
+    if (err)
+      return res.status(500).json({ message: "Error reading user data." });
+
+    const users = JSON.parse(data || "[]");
+    const user = users.find((u) => u.email === userEmail);
+    if (!user) return res.status(404).json({ message: "User not found." });
+    const productExists =
+      user.wishlist &&
+      user.wishlist.some((item) => item.productId === productId);
+
+    if (productExists) {
+      return res.json({
+        success: false,
+        message: "Product is already in your wishlist.",
+      });
+    }
+    user.wishlist = user.wishlist || [];
+    user.wishlist.push({
+      productId,
+      addedDate: new Date().toISOString(),
+    });
+
+    fs.writeFile("users.json", JSON.stringify(users, null, 2), (err) => {
+      if (err)
+        return res.status(500).json({ message: "Error saving wishlist data." });
+      res.json({ success: true, message: "Product added to wishlist." });
+    });
+  });
+});
+
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
