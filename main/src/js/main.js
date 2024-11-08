@@ -597,7 +597,7 @@ async function fetchProducts() {
                                 <h2 class="font-body--md-400">Share item:</h2>
                                 <ul class="social-icon">
                                     <li class="social-icon-link">
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/yourfacebookusername" target="_blank">
                                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -607,7 +607,7 @@ async function fetchProducts() {
                                         </a>
                                     </li>
                                     <li class="social-icon-link">
-                                        <a href="#">
+                                        <a href="https://www.twitter.com/yourtwitterusername" target="_blank">
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -617,7 +617,7 @@ async function fetchProducts() {
                                         </a>
                                     </li>
                                     <li class="social-icon-link">
-                                        <a href="#">
+                                        <a href="https://www.pinterest.com/yourpinterestusername" target="_blank">
                                             <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -627,7 +627,7 @@ async function fetchProducts() {
                                         </a>
                                     </li>
                                     <li class="social-icon-link">
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/yourusername" target="_blank">
                                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
