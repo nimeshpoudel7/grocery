@@ -213,6 +213,62 @@ app.post("/wishlist/add", authenticateToken, (req, res) => {
     });
   });
 });
+app.get("/wishlist", authenticateToken, (req, res) => {
+  const userEmail = req.user.email;
+
+  // Read users.json to get the user's wishlist
+  fs.readFile("users.json", "utf8", (err, userData) => {
+    if (err)
+      return res.status(500).json({ message: "Error reading user data." });
+
+    const users = JSON.parse(userData || "[]");
+    const user = users.find((u) => u.email === userEmail);
+    if (!user) return res.status(404).json({ message: "User not found." });
+
+    const wishlist = user.wishlist || [];
+
+    fs.readFile("Product.json", "utf8", (err, productData) => {
+      if (err)
+        return res.status(500).json({ message: "Error reading products." });
+
+      const products = JSON.parse(productData || "[]");
+
+      const detailedWishlist = wishlist.map((item) => {
+        const product = products.find((p) => p.id === item.productId);
+        return product ? { ...item, ...product } : item;
+      });
+      const resposeData = {
+        data: detailedWishlist,
+        success: true,
+      };
+
+      res.json(resposeData);
+    });
+  });
+});
+app.post("/wishlist/remove", authenticateToken, (req, res) => {
+  const { productId } = req.body;
+  const userEmail = req.user.email;
+
+  fs.readFile("users.json", "utf8", (err, data) => {
+    if (err)
+      return res.status(500).json({ message: "Error reading user data." });
+
+    const users = JSON.parse(data || "[]");
+    const user = users.find((u) => u.email === userEmail);
+    if (!user) return res.status(404).json({ message: "User not found." });
+
+    user.wishlist = user.wishlist.filter(
+      (item) => item.productId !== productId
+    );
+
+    fs.writeFile("users.json", JSON.stringify(users, null, 2), (err) => {
+      if (err)
+        return res.status(500).json({ message: "Error saving wishlist data." });
+      res.json({ success: true, message: "Product removed from wishlist." });
+    });
+  });
+});
 
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
