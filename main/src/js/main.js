@@ -225,6 +225,28 @@ function showPassword(id, el) {
       '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
   }
 }
+// jQuery
+$(document).ready(function () {
+  function animateBanner() {
+    var banner = $(".banner-slider--one");
+    var offset = banner.offset().top;
+    var windowHeight = $(window).height();
+    var scrollPosition = $(window).scrollTop();
+
+    // Check if the banner is in the viewport
+    if (scrollPosition + windowHeight > offset) {
+      banner.addClass("active");
+    }
+  }
+
+  // Initial check
+  animateBanner();
+
+  // Check on scroll
+  $(window).on("scroll", function () {
+    animateBanner();
+  });
+});
 
 // 16.8    Testimonial Slider
 var testimonialOne = new Swiper(".testimonial-slider--one", {
