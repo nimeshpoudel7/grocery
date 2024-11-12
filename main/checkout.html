@@ -104,46 +104,46 @@
                       d="M11.3333 14.6667H7.08333L4.25 30.25H29.75L26.9167 14.6667H22.6667M11.3333 14.6667V10.4167C11.3333 7.28705 13.8704 4.75 17 4.75V4.75C20.1296 4.75 22.6667 7.28705 22.6667 10.4167V14.6667M11.3333 14.6667H22.6667M11.3333 14.6667V18.9167M22.6667 14.6667V18.9167"
                       stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
-                  <span class="item-number">2</span>
+                  <span class="item-number">0</span>
                 </button>
                 <div class="header__cart-item-content-info">
                   <h5>Shopping cart:</h5>
-                  <span class="price">$57.00</span>
+                  <span class="price">$0.00</span>
                 </div>
               </div>
             </div>
             <div class="profileLogo header__cart-item" style="margin-left: 15px;">
               <a class="fav" href="user-dashboard.html">
-                  <svg width="25px" height="35px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <svg width="25px" height="35px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 
-                      <defs>
+                  <defs>
 
-                          <style>
-                              .cls-1 {
-                                  fill: #182d1b;
-                              }
+                    <style>
+                      .cls-1 {
+                        fill: #182d1b;
+                      }
 
-                              .cls-2 {
-                                  fill: #00b207;
-                              }
-                          </style>
+                      .cls-2 {
+                        fill: #00b207;
+                      }
+                    </style>
 
-                      </defs>
+                  </defs>
 
-                      <title />
+                  <title />
 
-                      <g id="fill">
+                  <g id="fill">
 
-                          <circle class="cls-1" cx="16" cy="7.48" r="5.48" />
+                    <circle class="cls-1" cx="16" cy="7.48" r="5.48" />
 
-                          <path class="cls-2"
-                              d="M23.54,30H8.46a4.8,4.8,0,0,1-4.8-4.8h0A10.29,10.29,0,0,1,13.94,14.92h4.12A10.29,10.29,0,0,1,28.34,25.2h0A4.8,4.8,0,0,1,23.54,30Z" />
+                    <path class="cls-2"
+                      d="M23.54,30H8.46a4.8,4.8,0,0,1-4.8-4.8h0A10.29,10.29,0,0,1,13.94,14.92h4.12A10.29,10.29,0,0,1,28.34,25.2h0A4.8,4.8,0,0,1,23.54,30Z" />
 
-                      </g>
+                  </g>
 
-                  </svg>
+                </svg>
               </a>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -155,7 +155,7 @@
             <li class="header__navigation-menu-link">
               <a href="index.html">
                 Home
-                
+
               </a>
 
             </li>
@@ -232,8 +232,8 @@
             <li class="header__mobile-menu-item">
               <a href="index.html" class="header__mobile-menu-item-link">
                 Home
-                
-              </a>           
+
+              </a>
             </li>
             <li class="header__mobile-menu-item">
               <a href="#" class="header__mobile-menu-item-link">
@@ -245,7 +245,7 @@
                   </svg>
                 </span>
               </a>
-              <ul class="header__mobile-dropdown-menu">                
+              <ul class="header__mobile-dropdown-menu">
                 <li class="header__mobile-dropdown-menu-link">
                   <a href="product.html">All Product</a>
                 </li>
@@ -319,7 +319,7 @@
               <h2 class="font-body--xxxl-500">Billing Information</h2>
             </div>
             <div class="billing__content-card-body">
-              <form action="#">
+              <form>
                 <div class="contact-form__content">
                   <div class="contact-form__content-group">
                     <div class="contact-form-input">
@@ -347,33 +347,45 @@
                     <div class="contact-form-input">
                       <label for="country">Country / Region </label>
                       <select id="country" class="contact-form-input__dropdown">
-                        <option value="01">United States</option>
-                        <option value="02">Canada</option>
-                        <option value="03">United Kingdom</option>
-                        <option value="04">Bangladesh</option>
+                        <option default>Select a country</option>
+                        <option value="01">Canada</option>
                       </select>
                     </div>
                     <!-- states -->
                     <div class="contact-form-input">
-                      <label for="states">states </label>
+                      <label for="states">Province</label>
                       <select id="states" class="contact-form-input__dropdown">
-                        <option value="01">Washington DC</option>
-                        <option value="02">Nova Scotia</option>
-                        <option value="03">Alberta</option>
-                        <option value="04">Manitoba</option>
-                        <option value="05">Dhaka</option>
+                        <option default>Select a province</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Northwest Territories">Northwest Territories</option>
+                        <option value="Nunavut">Nunavut</option>
+                        <option value="Yukon">Yukon</option>
                       </select>
                     </div>
+
                     <!-- zip -->
                     <div class="contact-form-input">
-                      <label for="zip">Zip Code</label>
+                      <label for="zip">Postal Code</label>
                       <select id="zip" class="contact-form-input__dropdown">
-                        <option value="01">1216</option>
-                        <option value="02">975</option>
-                        <option value="03">880</option>
-                        <option value="04">95</option>
+                        <option default>Select a Postal code</option>
+                        <option value="K1A 0B1">K1A 0B1</option>
+                        <option value="M5A 1A1">M5A 1A1</option>
+                        <option value="V6B 3K9">V6B 3K9</option>
+                        <option value="T2P 1G1">T2P 1G1</option>
+                        <option value="H3A 1A6">H3A 1A6</option>
                       </select>
+
                     </div>
+
                   </div>
                   <div class="contact-form__content-group">
                     <div class="contact-form-input">
@@ -386,12 +398,7 @@
                     </div>
                   </div>
 
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="remember" />
-                    <label class="form-check-label font-body--md-400" for="remember">
-                      Ship to a different address
-                    </label>
-                  </div>
+
                 </div>
               </form>
             </div>
@@ -415,105 +422,15 @@
             <div class="bill-card__content">
               <div class="bill-card__header">
                 <h2 class="bill-card__header-title font-body--xxl-500">
-                  Order Summery
+                  Order Summary
                 </h2>
               </div>
-              <div class="bill-card__body">
-                <!-- Product Info -->
-                <div class="bill-card__product">
-                  <div class="bill-card__product-item">
-                    <div class="bill-card__product-item-content">
-                      <div class="img-wrapper">
-                        <img src="src/images/products/img-01.png" alt="product-img" />
-                      </div>
-                      <h5 class="font-body--md-400">
-                        Green Apple <span class="quantity"> x5</span>
-                      </h5>
-                    </div>
+              <div class="bill-card__body" id="checkout-card__body">
 
-                    <p class="bill-card__product-price font-body--md-500">
-                      $70.00
-                    </p>
-                  </div>
-                  <div class="bill-card__product-item">
-                    <div class="bill-card__product-item-content">
-                      <div class="img-wrapper">
-                        <img src="src/images/products/img-02.png" alt="product-img" />
-                      </div>
-                      <h5 class="font-body--md-400">
-                        Orange <span class="quantity">x1</span>
-                      </h5>
-                    </div>
-
-                    <p class="bill-card__product-price font-body--md-500">
-                      $70.00
-                    </p>
-                  </div>
-                </div>
-                <!-- memo  -->
-                <div class="bill-card__memo">
-                  <!-- Subtotal  -->
-                  <div class="bill-card__memo-item subtotal">
-                    <p class="font-body--md-400">Subtotal:</p>
-                    <span class="font-body--md-500">$84.00</span>
-                  </div>
-                  <!-- Shipping  -->
-                  <div class="bill-card__memo-item shipping">
-                    <p class="font-body--md-400">Shipping:</p>
-                    <span class="font-body--md-500">Free</span>
-                  </div>
-                  <!-- total  -->
-                  <div class="bill-card__memo-item total">
-                    <p class="font-body--lg-400">Total:</p>
-                    <span class="font-body--xl-500">$84.00</span>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="bill-card__content">
-              <div class="bill-card__header">
-                <div class="bill-card__header">
-                  <h2 class="bill-card__header-title font-body--xxl-500">
-                    Payment Method
-                  </h2>
-                </div>
-              </div>
-              <div class="bill-card__body">
-                <form action="#">
-                  <!-- Payment Methods  -->
-                  <div class="bill-card__payment-method">
-                    <div class="bill-card__payment-method-item">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="payment" id="cash" checked />
-                        <label class="form-check-label font-body--400" for="cash">
-                          cash on delivery
-                        </label>
-                      </div>
-                    </div>
+            <div class="bill-card__content" id="payment-data">
 
-                    <div class="bill-card__payment-method-item">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="payment" id="paypal" />
-                        <label class="form-check-label font-body--400" for="paypal">
-                          Paypal
-                        </label>
-                      </div>
-                    </div>
-                    <div class="bill-card__payment-method-item">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="payment" id="amazon" />
-                        <label class="form-check-label font-body--400" for="amazon">
-                          Amazon Pay
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button class="button button--lg w-100" type="submit">
-                    Place Order
-                  </button>
-                </form>
-              </div>
             </div>
           </div>
         </div>
@@ -737,8 +654,13 @@
   <script src="src/lib/js/bvselect.js"></script>
   <script src="src/lib/js/bootstrap.bundle.min.js"></script>
   <script src="src/js/main.js"></script>
-  <!-- Purchase Button -->
-
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof renderProducts === "function") {
+        getCartList();
+      }
+    });
+  </script>
 </body>
 
 </html>
