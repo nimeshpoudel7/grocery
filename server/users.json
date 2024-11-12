@@ -30,7 +30,20 @@
       {
         "productId": 13,
         "addedDate": "2024-11-08T02:02:55.049Z"
+      },
+      {
+        "productId": 28,
+        "addedDate": "2024-11-12T00:00:54.205Z"
       }
-    ]
+    ],
+    "firstName": "Nimesh",
+    "lastName": "Poudel",
+    "company": "",
+    "address": "24 Acorn Ave",
+    "country": "01",
+    "province": "04",
+    "postalCode": "02",
+    "phone": "4379552989",
+    "paymentMethod": "paypal"
   }
 ]

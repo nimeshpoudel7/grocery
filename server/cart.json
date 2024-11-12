@@ -1,0 +1,17 @@
+[
+  {
+    "email": "test1@gmail.com",
+    "cart": [
+      {
+        "productId": 13,
+        "quantity": 1,
+        "addedDate": "2024-11-12T18:19:25.826Z"
+      },
+      {
+        "productId": 14,
+        "quantity": "2",
+        "addedDate": "2024-11-12T18:19:39.654Z"
+      }
+    ]
+  }
+]
