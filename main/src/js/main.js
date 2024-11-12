@@ -347,7 +347,16 @@ function createAccount(e) {
 
   fetch("http://localhost:3000/register", requestOptions)
     .then((response) => response.json())
-    .then((result) => console.log(result))
+    .then((result) => {
+      if (result.success) {
+        showSnackbar("Registration successful!", true);
+        setTimeout(() => {
+          window.location.href = "/main/login.html";
+        }, 1000);
+      } else {
+        showSnackbar("failed. Please check your credentials.", false);
+      }
+    })
     .catch((error) => console.error(error));
 }
 
