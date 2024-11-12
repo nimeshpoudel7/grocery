@@ -4510,7 +4510,7 @@ body.overlay::after {
 .contact-form-input label span {
   color: #666666;
 }
-.contact-form-input input, .contact-form-input select {
+.contact-form-input input, .contact-form-input select, .select-box--item select {
   position: relative;
   width: 100%;
   height: 50px;
@@ -9166,16 +9166,19 @@ body.overlay::after {
     flex-direction: column;
     padding-top: 0px;
     padding-bottom: 15px;
+    gap: 10px;
   }
 }
 .filter__sidebar .filter-box__top-left, .filter__sidebar .filter-box__top-right {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 @media (max-width: 991px) {
   .filter__sidebar .filter-box__top-left, .filter__sidebar .filter-box__top-right {
     justify-content: center;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .filter__sidebar .filter-box__top .select-box--item .bv_mainselect {

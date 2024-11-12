@@ -5,7 +5,7 @@
     "category": "Fruits",
     "price": 14.99,
     "original_price": 14.99,
-    "rating": 4.8,
+    "rating": 4.9,
     "description": "Fresh and juicy oranges with high vitamin C content.",
     "unit": "per kg",
     "discount": "50%",
@@ -256,7 +256,7 @@
     "image": "src/images/products/img-17.png"
   },
   {
-       "id": 18,
+    "id": 18,
     "name": "Whole Grain Bread",
     "category": "Bakery",
     "price": 4.99,
@@ -301,7 +301,7 @@
     "image": "src/images/products/img-20.jpg"
   },
   {
-   "id": 21,
+    "id": 21,
     "name": "Rice",
     "category": "Pantry",
     "price": 6.99,
@@ -331,7 +331,7 @@
     "image": "src/images/products/img-22.png"
   },
   {
-     "id": 23,
+    "id": 23,
     "name": "Potato Chips",
     "category": "Snacks",
     "price": 3.99,
@@ -361,7 +361,7 @@
     "image": "src/images/products/img-24.png"
   },
   {
-     "id": 25,
+    "id": 25,
     "name": "Ice Cream",
     "category": "Frozen",
     "price": 5.99,
@@ -406,7 +406,7 @@
     "image": "src/images/products/img-27.jpg"
   },
   {
-   "id": 28,
+    "id": 28,
     "name": "Coffee Beans",
     "category": "Beverages",
     "price": 12.99,
@@ -494,7 +494,6 @@
     "numberOfReviews": 167,
     "weight": "2.04 kg",
     "image": "src/images/products/img-33.jpg"
-
   },
   {
     "id": 34,

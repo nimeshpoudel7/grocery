@@ -101,9 +101,65 @@ function authenticateToken(req, res, next) {
 
 app.get("/products", (req, res) => {
   fs.readFile("Product.json", "utf8", (err, data) => {
-    if (err)
-      return res.status(500).json({ message: "Error reading products." });
-    res.json(JSON.parse(data));
+    if (err) {
+      return res.status(500).json({
+        message: "Error reading products.",
+        error: err.message,
+      });
+    }
+
+    try {
+      let products = JSON.parse(data);
+      const { filter, filterType } = req.query;
+
+      // If no filter parameters are provided, return all products
+      if (!filter || !filterType) {
+        return res.json(products);
+      }
+
+      // Apply filters if provided
+      switch (filter.toLowerCase()) {
+        case "rating":
+          // Filter products by rating greater than or equal to specified value
+          products = products.filter(
+            (product) => product.rating >= parseFloat(filterType)
+          );
+          break;
+
+        case "category":
+          // Filter products by category
+          products = products.filter(
+            (product) =>
+              product.category.toLowerCase() === filterType.toLowerCase()
+          );
+          break;
+
+        case "price":
+          // Sort products by price
+          products.sort((a, b) => {
+            if (filterType.toLowerCase() === "lowtohigh") {
+              return a.price - b.price;
+            } else if (filterType.toLowerCase() === "hightolow") {
+              return b.price - a.price;
+            }
+            return 0;
+          });
+          break;
+
+        default:
+          return res.status(400).json({
+            message:
+              "Invalid filter parameter. Supported filters: price, rating, category",
+          });
+      }
+
+      res.json(products);
+    } catch (parseError) {
+      return res.status(500).json({
+        message: "Error parsing products data.",
+        error: parseError.message,
+      });
+    }
   });
 });
 app.get("/popular-product", (req, res) => {
