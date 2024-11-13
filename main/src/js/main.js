@@ -1332,3 +1332,15 @@ function handleRemoveFavsListClick(e, productId) {
     .catch((error) => console.error(error));
   return false;
 }
+
+
+function logoutAccount(event) {
+  localStorage.removeItem("LoginToken"); // Remove token from local storage
+        showSnackbar("Logout successful!", true);
+        setTimeout(() => {
+          window.location.href = "sign-in.html"; // Redirect to sign-in page
+        }, 2500);
+}
+
+
+
