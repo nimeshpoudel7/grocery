@@ -1396,6 +1396,17 @@ function handleRemoveFavsListClick(e, productId) {
   return false;
 }
 
+
+function logoutAccount(event) {
+  localStorage.removeItem("LoginToken"); // Remove token from local storage
+        showSnackbar("Logout successful!", true);
+        setTimeout(() => {
+          window.location.href = "sign-in.html"; // Redirect to sign-in page
+        }, 2500);
+}
+
+
+
 function handleAddtoCartClick(e, productId) {
   console.log(e);
   const quantity = document.getElementById("counter-btn-counter");

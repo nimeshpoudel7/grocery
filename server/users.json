@@ -35,15 +35,50 @@
         "productId": 28,
         "addedDate": "2024-11-12T00:00:54.205Z"
       }
-    ],
-    "firstName": "Nimesh",
-    "lastName": "Poudel",
-    "company": "",
-    "address": "24 Acorn Ave",
-    "country": "01",
-    "province": "04",
-    "postalCode": "02",
-    "phone": "4379552989",
-    "paymentMethod": "paypal"
+    ]
+  },
+  {
+    "email": "elizagrg12@gmail.com",
+    "password": "$2b$10$maku99C9wQHqwUhjLaMOsem9BCz/erBINJtIsMCeSU6Q0hVYPSuc.",
+    "wishlist": [
+      {
+        "productId": 6,
+        "addedDate": "2024-11-12T00:33:51.394Z"
+      },
+      {
+        "productId": 9,
+        "addedDate": "2024-11-12T00:34:44.651Z"
+      },
+      {
+        "productId": 7,
+        "addedDate": "2024-11-13T06:34:29.571Z"
+      },
+      {
+        "productId": 11,
+        "addedDate": "2024-11-13T07:10:28.723Z"
+      }
+    ]
+  },
+  {
+    "email": "elizagrg12@gmail.com",
+    "password": "$2b$10$maku99C9wQHqwUhjLaMOsem9BCz/erBINJtIsMCeSU6Q0hVYPSuc.",
+    "wishlist": [
+      {
+        "productId": 6,
+        "addedDate": "2024-11-12T00:33:51.394Z"
+      },
+      {
+        "productId": 9,
+        "addedDate": "2024-11-12T00:34:44.651Z"
+      },
+      {
+        "productId": 7,
+        "addedDate": "2024-11-13T06:34:29.571Z"
+      },
+      {
+        "productId": 11,
+        "addedDate": "2024-11-13T07:10:28.723Z"
+      }
+    ]
   }
 ]
