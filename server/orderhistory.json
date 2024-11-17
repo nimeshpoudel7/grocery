@@ -1,0 +1,64 @@
+[
+  {
+    "orderId": "ORD-1731430988735-525282",
+    "userEmail": "test1@gmail.com",
+    "orderDate": "2024-11-12T17:03:08.748Z",
+    "orderDetails": {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1,
+          "addedDate": "2024-11-12T16:56:47.440Z"
+        },
+        {
+          "productId": 13,
+          "quantity": 1,
+          "addedDate": "2024-11-12T17:02:34.865Z"
+        },
+        {
+          "productId": 14,
+          "quantity": 1,
+          "addedDate": "2024-11-12T17:02:36.585Z"
+        },
+        {
+          "productId": 8,
+          "quantity": "4",
+          "addedDate": "2024-11-12T17:02:46.110Z"
+        }
+      ],
+      "paymentMethod": "paypal"
+    },
+    "shippingAddress": {
+      "email": "test1@gmail.com",
+      "password": "$2b$10$nKncznM6xSCSL6.lLFmNpO.Ol/HEGgP6a3GlBbJS5znXg4OAxxApi",
+      "wishlist": [
+        {
+          "productId": 4,
+          "addedDate": "2024-11-08T01:30:38.186Z"
+        },
+        {
+          "productId": 2,
+          "addedDate": "2024-11-08T01:30:44.778Z"
+        },
+        {
+          "productId": 13,
+          "addedDate": "2024-11-08T02:02:55.049Z"
+        },
+        {
+          "productId": 28,
+          "addedDate": "2024-11-12T00:00:54.205Z"
+        }
+      ],
+      "firstName": "Nimesh",
+      "lastName": "Poudel",
+      "company": "",
+      "address": "24 Acorn Ave",
+      "country": "01",
+      "province": "04",
+      "postalCode": "02",
+      "phone": "4379552989",
+      "paymentMethod": "paypal"
+    },
+    "total": 70.93
+  }
+]
