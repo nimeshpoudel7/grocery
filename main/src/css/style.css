@@ -10352,3 +10352,251 @@ body.overlay::after {
   animation: slideIn 3s ease-in-out forwards;
   pointer-events: auto; /* Enable interactions after animation */
 }
+
+/*Terms and Conditions*/
+.terms-section {
+  padding: 40px 0;
+  background-color: #fafafa;
+  font-family: 'Inter', sans-serif;
+}
+
+.terms-section__quick-links {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.terms-section__quick-links--item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.terms-section__quick-links--item h4 {
+  margin: 0;
+  color: #2C742F;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.terms-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.terms-nav li {
+  margin: 12px 0;
+}
+
+.terms-nav a {
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-number {
+  color: #2C742F;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.terms-nav a:hover {
+  color: #2C742F;
+  transform: translateX(5px);
+}
+
+.terms-content-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.header-section {
+  margin-bottom: 40px;
+}
+
+.header-section h2 {
+  color: #2C742F;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header-divider {
+  height: 4px;
+  width: 60px;
+  background: #2C742F;
+  margin: 20px 0;
+  border-radius: 2px;
+}
+
+.terms-intro {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.terms-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.section-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2C742F;
+  opacity: 0.3;
+}
+
+.section-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-content {
+  padding-left: 45px;
+}
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.terms-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.terms-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #2C742F;
+  border-radius: 50%;
+}
+
+.terms-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.update-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.update-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.update-date {
+  color: #2C742F;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.terms-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.terms-contact p {
+  margin: 0;
+  font-weight: 500;
+}
+/* 
+.button {
+  background: #2C742F;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button:hover {
+  background: #235f25;
+  transform: translateX(5px);
+} */
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .terms-section__quick-links {
+    margin-bottom: 30px;
+  }
+  
+  .terms-content-card {
+    padding: 25px;
+  }
+
+  .section-content {
+    padding-left: 25px;
+  }
+
+  .terms-contact {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+.section-icon {
+        width: 52px;
+        height: 51px;
+    }
+
+    .section-icon svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-icon path {
+        stroke: #2C742F;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
