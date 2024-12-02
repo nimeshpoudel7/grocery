@@ -1752,7 +1752,11 @@ const originalFetch = window.fetch;
 
 window.fetch = async (...args) => {
   try {
+    const preloader = document.querySelector(".loader");
+
+    preloader.style.display = "flex";
     const response = await originalFetch(...args);
+    preloader.style.display = "none";
 
     // Check for 'invalid token' response
     if (response.status === 401) {
