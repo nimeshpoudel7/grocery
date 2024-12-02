@@ -330,6 +330,24 @@ function createAccount(e) {
   const email = document.getElementById("email");
   const password = document.getElementById("password");
   const confirmPassword = document.getElementById("confirmPassword");
+  const agreement = document.getElementById("remember"); // Checkbox for agreement
+
+  if (!email.value) {
+    showSnackbar("Please Enter the email. Please try again.", false);
+    return; // Exit the function if passwords don't match
+  }
+  // remember
+  // Validate that passwords match
+  if (password.value !== confirmPassword.value) {
+    showSnackbar("Passwords do not match. Please try again.", false);
+    return; // Exit the function if passwords don't match
+  }
+
+  // Validate that the agreement checkbox is checked
+  if (!agreement.checked) {
+    showSnackbar("Please agree to the terms and conditions.", false);
+    return; // Exit the function if agreement is not checked
+  }
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
