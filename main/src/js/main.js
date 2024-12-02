@@ -345,7 +345,7 @@ function createAccount(e) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/register", requestOptions)
+  fetch("https://grocery-q716.onrender.com/register", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       if (result.success) {
@@ -379,7 +379,7 @@ function loginAccount(e) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/login", requestOptions)
+  fetch("https://grocery-q716.onrender.com/login", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       if (result.success) {
@@ -403,7 +403,7 @@ function renderProducts(sortOption, sortType) {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("type");
   console.log("myParam", myParam);
-  let baseUrl = "http://localhost:3000/products";
+  let baseUrl = "https://grocery-q716.onrender.com/products";
 
   if (sortOption !== "" && sortOption !== undefined) {
     console.log("here", sortOption);
@@ -531,7 +531,7 @@ async function fetchProducts() {
   try {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("id");
-    const response = await fetch(`http://localhost:3000/product?id=${myParam}`);
+    const response = await fetch(`https://grocery-q716.onrender.com/product?id=${myParam}`);
 
     const product = await response.json();
 
@@ -831,7 +831,7 @@ function popularProducts() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/popular-product", requestOptions)
+  fetch("https://grocery-q716.onrender.com/popular-product", requestOptions)
     .then((response) => response.json())
     .then((products) => {
       const productContainer = document.getElementById(
@@ -945,7 +945,7 @@ function randomProducts() {
     redirect: "follow",
   };
   const classes = ["one", "two", "three", "four", "five"];
-  fetch("http://localhost:3000/random-products", requestOptions)
+  fetch("https://grocery-q716.onrender.com/random-products", requestOptions)
     .then((response) => response.json())
     .then((products) => {
       const productContainer = document.getElementById(
@@ -1144,7 +1144,7 @@ function categorieProducts() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/categories", requestOptions)
+  fetch("https://grocery-q716.onrender.com/categories", requestOptions)
     .then((response) => response.json())
     .then((products) => {
       const productContainer = document.getElementById(
@@ -1193,7 +1193,7 @@ function handleFavsListClick(e, productId) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/wishlist/add", requestOptions)
+  fetch("https://grocery-q716.onrender.com/wishlist/add", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
@@ -1219,7 +1219,7 @@ function getWishList() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/wishlist", requestOptions)
+  fetch("https://grocery-q716.onrender.com/wishlist", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
@@ -1382,7 +1382,7 @@ function handleRemoveFavsListClick(e, productId) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/wishlist/remove", requestOptions)
+  fetch("https://grocery-q716.onrender.com/wishlist/remove", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
@@ -1428,7 +1428,7 @@ function handleAddtoCartClick(e, productId) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/cart", requestOptions)
+  fetch("https://grocery-q716.onrender.com/cart", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
@@ -1454,7 +1454,7 @@ function getCartList() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/cart", requestOptions)
+  fetch("https://grocery-q716.onrender.com/cart", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
@@ -1735,7 +1735,7 @@ function handleRemoveCartListClick(e, productId) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/cart-remove", requestOptions)
+  fetch("https://grocery-q716.onrender.com/cart-remove", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       console.log(result);
@@ -1824,7 +1824,7 @@ async function oderset(e, total) {
   const token = localStorage.getItem("LoginToken");
   myHeaders.append("Authorization", `Bearer ${token}`);
   try {
-    const response = await fetch("http://localhost:3000/create-order", {
+    const response = await fetch("https://grocery-q716.onrender.com/create-order", {
       method: "POST",
       headers: myHeaders,
       body: JSON.stringify(userData),
@@ -1855,7 +1855,7 @@ function userDetails() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/user-dashboard", requestOptions)
+  fetch("https://grocery-q716.onrender.com/user-dashboard", requestOptions)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
@@ -1976,7 +1976,7 @@ function orderhistoryAll() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/order-history", requestOptions)
+  fetch("https://grocery-q716.onrender.com/order-history", requestOptions)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
@@ -2046,7 +2046,7 @@ function orderDetails() {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("id");
   fetch(
-    `http://localhost:3000/order-details?orderId=${myParam}`,
+    `https://grocery-q716.onrender.com/order-details?orderId=${myParam}`,
     requestOptions
   )
     .then((response) => response.json())
@@ -2187,7 +2187,7 @@ function updateCartSummary() {
   const token = localStorage.getItem("LoginToken");
   myHeaders.append("Authorization", `Bearer ${token}`);
   if (!token) return;
-  fetch("http://localhost:3000/cart-summary", {
+  fetch("https://grocery-q716.onrender.com/cart-summary", {
     headers: myHeaders,
   })
     .then((response) => response.json())
