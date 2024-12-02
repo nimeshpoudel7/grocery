@@ -351,7 +351,7 @@ function createAccount(e) {
       if (result.success) {
         showSnackbar("Registration successful!", true);
         setTimeout(() => {
-          window.location.href = "/main/login.html";
+          window.location.href = "/sign-in.html";
         }, 1000);
       } else {
         showSnackbar("failed. Please check your credentials.", false);
@@ -386,7 +386,7 @@ function loginAccount(e) {
         localStorage.setItem("LoginToken", result.token);
         showSnackbar("Login successful!", true);
         setTimeout(() => {
-          window.location.href = "/main/index.html";
+          window.location.href = "/index.html";
         }, 1500);
       } else {
         showSnackbar("Login failed. Please check your credentials.", false);
@@ -531,7 +531,9 @@ async function fetchProducts() {
   try {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get("id");
-    const response = await fetch(`https://grocery-q716.onrender.com/product?id=${myParam}`);
+    const response = await fetch(
+      `https://grocery-q716.onrender.com/product?id=${myParam}`
+    );
 
     const product = await response.json();
 
@@ -1158,7 +1160,7 @@ function categorieProducts() {
         productContainer?.insertAdjacentHTML(
           "beforeend",
           `
-        <a href="/main/product.html?type=${product.category}" class="cards-sm popular-categories__wrapper-item">
+        <a href="/product.html?type=${product.category}" class="cards-sm popular-categories__wrapper-item">
           <div class="cards-sm__img-wrapper">
             <img src=${product.image} alt="img-01" />
           </div>
@@ -1396,16 +1398,13 @@ function handleRemoveFavsListClick(e, productId) {
   return false;
 }
 
-
 function logoutAccount(event) {
   localStorage.removeItem("LoginToken"); // Remove token from local storage
-        showSnackbar("Logout successful!", true);
-        setTimeout(() => {
-          window.location.href = "sign-in.html"; // Redirect to sign-in page
-        }, 2500);
+  showSnackbar("Logout successful!", true);
+  setTimeout(() => {
+    window.location.href = "sign-in.html"; // Redirect to sign-in page
+  }, 2500);
 }
-
-
 
 function handleAddtoCartClick(e, productId) {
   console.log(e);
@@ -1635,7 +1634,7 @@ function getCartList() {
                     <span class="font-body--xl-500">$${sum + 10}</span>
                   </div>
                 </div>
-                <form action="/main/checkout.html">
+                <form action="/checkout.html">
                   <button class="button button--lg w-100" style="margin-top: 20px" type="submit">
                     Place Order
                   </button>
@@ -1759,7 +1758,7 @@ window.fetch = async (...args) => {
     if (response.status === 401) {
       // Clear localStorage and redirect to login page
       localStorage.clear();
-      window.location.href = "/main/sign-in.html"; // Adjust this path if necessary
+      window.location.href = "/sign-in.html"; // Adjust this path if necessary
     }
 
     return response;
@@ -1824,11 +1823,14 @@ async function oderset(e, total) {
   const token = localStorage.getItem("LoginToken");
   myHeaders.append("Authorization", `Bearer ${token}`);
   try {
-    const response = await fetch("https://grocery-q716.onrender.com/create-order", {
-      method: "POST",
-      headers: myHeaders,
-      body: JSON.stringify(userData),
-    });
+    const response = await fetch(
+      "https://grocery-q716.onrender.com/create-order",
+      {
+        method: "POST",
+        headers: myHeaders,
+        body: JSON.stringify(userData),
+      }
+    );
 
     const result = await response.json();
     if (result.success) {
