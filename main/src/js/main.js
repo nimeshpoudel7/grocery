@@ -1676,7 +1676,9 @@ function getCartList() {
                     <!-- total  -->
                     <div class="bill-card__memo-item total">
                       <p class="font-body--lg-400">Total:</p>
-                      <span class="font-body--xl-500">${sum + 10}</span>
+                      <span class="font-body--xl-500">$${Number(
+                        sum + 10
+                      ).toFixed(2)}</span>
                     </div>
                   </div>`
         );
@@ -1721,9 +1723,9 @@ function getCartList() {
                     </div>
                   </div>
 
-                  <button class="button button--lg w-100"  onclick="oderset(event,${
+                  <button class="button button--lg w-100"  onclick="oderset(event,${Number(
                     sum + 10
-                  })">
+                  ).toFixed(2)}">
                     Place Order
                   </button>
                 </form>
