@@ -1451,6 +1451,7 @@ function handleAddtoCartClick(e, productId) {
       console.log(result);
       if (result.success) {
         showSnackbar(result.message, true);
+        location.reload();
       } else {
         showSnackbar(result.message, false);
       }
@@ -1483,7 +1484,6 @@ function getCartList() {
           "checkout-card__body"
         );
         const payment = document.getElementById("payment-data");
-
         let sum = 0;
         // productContainer.innerHTML = ""; // Clear existing content if necessary
         result?.data.forEach((product) => {
@@ -1649,7 +1649,9 @@ function getCartList() {
                   <!-- total  -->
                   <div class="bill-card__memo-item total">
                     <p class="font-body--lg-400">Total:</p>
-                    <span class="font-body--xl-500">$${sum + 10}</span>
+                    <span class="font-body--xl-500">$${Number(sum + 10).toFixed(
+                      2
+                    )}</span>
                   </div>
                 </div>
                 <form action="/checkout.html">
@@ -1758,6 +1760,7 @@ function handleRemoveCartListClick(e, productId) {
       console.log(result);
       if (result.success) {
         showSnackbar(result.message, true);
+        location.reload();
       } else {
         showSnackbar(result.message, false);
       }
