@@ -1723,9 +1723,9 @@ function getCartList() {
                     </div>
                   </div>
 
-                  <button class="button button--lg w-100"  onclick="oderset(event,${Number(
-                    sum + 10
-                  ).toFixed(2)}">
+                   <button class="button button--lg w-100"  onclick="oderset(event,${
+                     sum + 10
+                   })">
                     Place Order
                   </button>
                 </form>
@@ -2293,3 +2293,11 @@ var categories = new Swiper(".popular-categories--slider", {
     },
   },
 });
+// Todo :
+
+// gst
+// exirey date
+// color
+//  weight
+// manufacture by
+//
