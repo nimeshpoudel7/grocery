@@ -1862,6 +1862,7 @@ async function oderset(e, total) {
     const result = await response.json();
     if (result.success) {
       showSnackbar("Order placed successfully!", true);
+      window.location.href = "/user-dashboard";
     } else {
       showSnackbar("Failed to place the order.", false);
     }
