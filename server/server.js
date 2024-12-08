@@ -98,9 +98,6 @@ function authenticateToken(req, res, next) {
     next();
   });
 }
-const fs = require("fs");
-const express = require("express");
-const app = express();
 
 app.get("/products", (req, res) => {
   fs.readFile("Product.json", "utf8", (err, data) => {
