@@ -171,10 +171,6 @@ app.get("/products", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
-
 // app.get("/products", (req, res) => {
 //   fs.readFile("Product.json", "utf8", (err, data) => {
 //     if (err) {
