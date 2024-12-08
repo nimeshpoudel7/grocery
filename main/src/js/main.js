@@ -809,6 +809,32 @@ async function fetchProducts() {
                     </div>
                 </div>
           `;
+
+    const addinfo = document.querySelector(".products-tab__information-list");
+    addinfo.insertAdjacentHTML(
+      "beforeend",
+      `<li>
+                                            <h5 class="title">Weight:</h5>
+                                            <p class="title-description">${product?.weight}</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="title">Color:</h5>
+                                            <p class="title-description">${product?.color}</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="title">Type:</h5>
+                                            <p class="title-description">${product?.type}</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="title">Unit:</h5>
+                                            <p class="title-description">${product?.unit}</p>
+                                        </li>
+                                        <li>
+                                            <h5 class="title">Expiry Date :</h5>
+                                            <p class="title-description">${product?.expiry_date}</span></p>
+                                        </li>
+                                        `
+    );
   } catch (error) {
     console.error("Error fetching products:", error);
   }
