@@ -116,7 +116,7 @@ app.get("/products", (req, res) => {
       if (!filter && !filterType && !search) {
         return res.json(products);
       }
-
+      console.log("aaa");
       // Search logic (name or category)
       if (search) {
         products = products.filter(
