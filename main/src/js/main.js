@@ -420,7 +420,7 @@ function renderProducts(sortOption, sortType) {
   };
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("type");
-  console.log("myParam", myParam);
+  const searchParams = urlParams.get("search");
   let baseUrl = "https://grocery-q716.onrender.com/products";
 
   if (sortOption !== "" && sortOption !== undefined) {
@@ -430,7 +430,10 @@ function renderProducts(sortOption, sortType) {
   if (myParam) {
     baseUrl += `?filter=category&filterType=${myParam}`;
   }
-
+  if (searchParams) {
+    baseUrl += `?search=${searchParams}`;
+  }
+  console.log(baseUrl);
   fetch(baseUrl, requestOptions)
     .then((response) => response.json())
     .then((products) => {
@@ -607,6 +610,10 @@ async function fetchProducts() {
                         <div class="products__content-title">
                             <h2 class="font-title--md">${product.name}</h2>
                             <span class="label stock-in">in Stock</span>
+                            <span class="label weight">Weght: ${
+                              product?.weight
+                            }</span>
+
                             <!-- <span class="label stock-out">Stock out</span> -->
                         </div>
                         <div class="products__content-info">
@@ -780,9 +787,9 @@ async function fetchProducts() {
                     </div>
                     <!-- Tags  -->
                     <div class="products__content">
-                        <h5 class="products__content-category font-body--md-500">Category: <a href="#">${
+                        <h5 class="products__content-category font-body--md-500">Category: <a href="/product.html?type=${
                           product.category
-                        }</a>
+                        }">${product.category}</a>
                         </h5>
                         <div class="products__content-tags">
                             <h5 class="font-body--md-500">Tag :</h5>
@@ -2302,3 +2309,32 @@ var categories = new Swiper(".popular-categories--slider", {
 //  weight
 // manufacture by
 //
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Select the search form
+  const searchForm = document
+    .querySelector(".header__input-form")
+    .closest("form");
+
+  // Add a submit event listener to the form
+  searchForm.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the input value
+    const searchInput = searchForm
+      .querySelector("input[type='text']")
+      .value.trim();
+
+    // Check if the input is not empty
+    if (!searchInput) {
+      alert("Please enter a search term.");
+      return; // Exit the function if no value is entered
+    }
+    window.location.href = `/product.html?search=${encodeURIComponent(
+      searchInput
+    )}`;
+
+    // Prepare the API endpoint
+    console.log();
+  });
+});

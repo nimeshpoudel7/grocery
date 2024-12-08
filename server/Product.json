@@ -13,7 +13,10 @@
     "tags": ["citrus", "vitamin C", "fresh", "seasonal", "healthy"],
     "numberOfReviews": 245,
     "weight": "1 kg",
-    "image": "src/images/products/img-02.png"
+    "image": "src/images/products/img-02.png",
+    "color": "Orange",
+    "type": "Citrus",
+    "expiry_date": "2025-06-01"
   },
   {
     "id": 2,
@@ -28,7 +31,10 @@
     "tags": ["fresh", "crisp", "snack", "healthy", "granny smith"],
     "numberOfReviews": 189,
     "weight": "1 kg",
-    "image": "src/images/products/img-01.png"
+    "image": "src/images/products/img-01.png",
+    "color": "Green",
+    "type": "Pome",
+    "expiry_date": "2025-04-01"
   },
   {
     "id": 3,
@@ -44,13 +50,16 @@
     "tags": ["tropical", "potassium", "sweet", "healthy", "breakfast"],
     "numberOfReviews": 312,
     "weight": "1 kg",
-    "image": "src/images/products/img-03.jpeg"
+    "image": "src/images/products/img-03.jpeg",
+    "color": "Yellow",
+    "type": "Tropical",
+    "expiry_date": "2024-12-15"
   },
   {
     "id": 4,
     "name": "Strawberry",
     "category": "Fruits",
-    "price": 4.50,
+    "price": 4.5,
     "original_price": 4.99,
     "rating": 4.7,
     "description": "Fresh strawberries perfect for smoothies and desserts.",
@@ -59,7 +68,10 @@
     "tags": ["berries", "sweet", "dessert", "smoothie", "seasonal"],
     "numberOfReviews": 178,
     "weight": "250g",
-    "image": "src/images/products/img-04.jpg"
+    "image": "src/images/products/img-04.jpg",
+    "color": "Red",
+    "type": "Berry",
+    "expiry_date": "2024-12-12"
   },
   {
     "id": 5,
@@ -75,7 +87,10 @@
     "tags": ["berries", "antioxidants", "superfood", "healthy", "snack"],
     "numberOfReviews": 156,
     "weight": "200g",
-    "image": "src/images/products/img-05.jpg"
+    "image": "src/images/products/img-05.jpg",
+    "color": "Blue",
+    "type": "Berry",
+    "expiry_date": "2025-01-05"
   },
   {
     "id": 6,
@@ -90,13 +105,16 @@
     "tags": ["tropical", "sweet", "exotic", "vitamin A", "seasonal"],
     "numberOfReviews": 134,
     "weight": "1 kg",
-    "image": "src/images/products/img-06.jpg"
+    "image": "src/images/products/img-06.jpg",
+    "color": "Yellow",
+    "type": "Tropical",
+    "expiry_date": "2025-05-01"
   },
   {
     "id": 7,
     "name": "Carrot",
     "category": "Vegetables",
-    "price": 5.60,
+    "price": 5.6,
     "original_price": 6.99,
     "rating": 4.4,
     "description": "Crunchy carrots rich in beta-carotene and fiber.",
@@ -105,7 +123,10 @@
     "tags": ["root vegetable", "beta-carotene", "healthy", "crunchy", "fresh"],
     "numberOfReviews": 198,
     "weight": "1 kg",
-    "image": "src/images/products/img-07.jpg"
+    "image": "src/images/products/img-07.jpg",
+    "color": "Orange",
+    "type": "Root",
+    "expiry_date": "2025-01-10"
   },
   {
     "id": 8,
@@ -120,7 +141,10 @@
     "tags": ["cruciferous", "healthy", "vitamin C", "fiber", "green"],
     "numberOfReviews": 167,
     "weight": "1 kg",
-    "image": "src/images/products/img-08.jpg"
+    "image": "src/images/products/img-08.jpg",
+    "color": "Brown",
+    "type": "Root",
+    "expiry_date": "2025-02-10"
   },
   {
     "id": 9,
@@ -135,7 +159,10 @@
     "tags": ["leafy greens", "iron", "vitamin K", "salad", "organic"],
     "numberOfReviews": 145,
     "weight": "250g",
-    "image": "src/images/products/img-09.png"
+    "image": "src/images/products/img-09.png",
+    "color": "Green",
+    "type": "Leafy Green",
+    "expiry_date": "2024-12-20"
   },
   {
     "id": 10,
@@ -151,7 +178,10 @@
     "tags": ["colorful", "vitamin C", "stir-fry", "crunchy", "fresh"],
     "numberOfReviews": 178,
     "weight": "1 kg",
-    "image": "src/images/products/img-10.png"
+    "image": "src/images/products/img-10.png",
+    "color": "Red",
+    "type": "Fruit",
+    "expiry_date": "2024-12-18"
   },
   {
     "id": 11,
@@ -166,13 +196,16 @@
     "tags": ["dairy", "calcium", "protein", "fresh", "local"],
     "numberOfReviews": 289,
     "weight": "3.78 L",
-    "image": "src/images/products/img-11.jpg"
+    "image": "src/images/products/img-11.jpg",
+    "color": "Green",
+    "type": "Cucurbit",
+    "expiry_date": "2024-12-25"
   },
   {
     "id": 12,
     "name": "Greek Yogurt",
     "category": "Dairy",
-    "price": 4.50,
+    "price": 4.5,
     "original_price": 5.99,
     "rating": 4.7,
     "description": "Creamy Greek yogurt, high in protein.",
@@ -181,7 +214,10 @@
     "tags": ["protein", "probiotic", "breakfast", "healthy", "creamy"],
     "numberOfReviews": 234,
     "weight": "907g",
-    "image": "src/images/products/img-12.png"
+    "image": "src/images/products/img-12.png",
+    "color": "Green",
+    "type": "Yogurt",
+    "expiry_date": "2024-12-22"
   },
   {
     "id": 13,
@@ -197,7 +233,10 @@
     "tags": ["aged", "sharp", "protein", "calcium", "natural"],
     "numberOfReviews": 267,
     "weight": "454g",
-    "image": "src/images/products/img-13.png"
+    "image": "src/images/products/img-13.png",
+    "color": "Yellow",
+    "type": "Cheese",
+    "expiry_date": "2025-04-01"
   },
   {
     "id": 14,
@@ -212,7 +251,10 @@
     "tags": ["lean", "protein", "boneless", "fresh", "versatile"],
     "numberOfReviews": 345,
     "weight": "454g",
-    "image": "src/images/products/img-14.png"
+    "image": "src/images/products/img-14.png",
+    "color": "White",
+    "type": "Poultry",
+    "expiry_date": "2024-12-15"
   },
   {
     "id": 15,
@@ -227,7 +269,10 @@
     "tags": ["lean", "protein", "versatile", "burgers", "fresh"],
     "numberOfReviews": 298,
     "weight": "454g",
-    "image": "src/images/products/img-15.png"
+    "image": "src/images/products/img-15.png",
+    "color": "Red",
+    "type": "Beef",
+    "expiry_date": "2024-12-10"
   },
   {
     "id": 16,
@@ -242,7 +287,10 @@
     "tags": ["omega-3", "fresh", "protein", "healthy", "fish"],
     "numberOfReviews": 187,
     "weight": "454g",
-    "image": "src/images/products/img-16.jpg"
+    "image": "src/images/products/img-16.jpg",
+    "color": "Pink",
+    "type": "Fish",
+    "expiry_date": "2025-01-15"
   },
   {
     "id": 17,
@@ -257,7 +305,10 @@
     "tags": ["seafood", "protein", "peeled", "deveined", "fresh"],
     "numberOfReviews": 165,
     "weight": "454g",
-    "image": "src/images/products/img-17.png"
+    "image": "src/images/products/img-17.png",
+    "color": "Pink",
+    "type": "Seafood",
+    "expiry_date": "2025-01-10"
   },
   {
     "id": 18,
@@ -273,7 +324,10 @@
     "tags": ["whole grain", "fiber", "fresh", "healthy", "bread"],
     "numberOfReviews": 223,
     "weight": "680g",
-    "image": "src/images/products/img-18.jpg"
+    "image": "src/images/products/img-18.jpg",
+    "color": "Brown",
+    "type": "Bread",
+    "expiry_date": "2024-12-10"
   },
   {
     "id": 19,
@@ -288,13 +342,16 @@
     "tags": ["breakfast", "buttery", "flaky", "fresh", "pastry"],
     "numberOfReviews": 178,
     "weight": "240g",
-    "image": "src/images/products/img-19.jpg"
+    "image": "src/images/products/img-19.jpg",
+    "color": "Golden",
+    "type": "Pastry",
+    "expiry_date": "2024-12-08"
   },
   {
     "id": 20,
     "name": "Pasta",
     "category": "Pantry",
-    "price": 3.20,
+    "price": 3.2,
     "original_price": 3.99,
     "rating": 4.9,
     "description": "Premium Italian pasta.",
@@ -303,7 +360,10 @@
     "tags": ["Italian", "pantry", "staple", "pasta", "carbs"],
     "numberOfReviews": 345,
     "weight": "454g",
-    "image": "src/images/products/img-20.jpg"
+    "image": "src/images/products/img-20.jpg",
+    "color": "Yellow",
+    "type": "Pasta",
+    "expiry_date": "2025-05-01"
   },
   {
     "id": 21,
@@ -319,7 +379,10 @@
     "tags": ["jasmine", "staple", "grain", "pantry", "Asian"],
     "numberOfReviews": 287,
     "weight": "2.27 kg",
-    "image": "src/images/products/img-21.jpg"
+    "image": "src/images/products/img-21.jpg",
+    "color": "White",
+    "type": "Grain",
+    "expiry_date": "2025-06-01"
   },
   {
     "id": 22,
@@ -334,7 +397,10 @@
     "tags": ["Italian", "extra virgin", "cooking", "healthy", "premium"],
     "numberOfReviews": 198,
     "weight": "500ml",
-    "image": "src/images/products/img-22.png"
+    "image": "src/images/products/img-22.png",
+    "color": "Green",
+    "type": "Oil",
+    "expiry_date": "2025-09-01"
   },
   {
     "id": 23,
@@ -349,7 +415,10 @@
     "tags": ["snack", "crispy", "salty", "classic", "chips"],
     "numberOfReviews": 456,
     "weight": "227g",
-    "image": "src/images/products/img-23.jpg"
+    "image": "src/images/products/img-23.jpg",
+    "color": "Yellow",
+    "type": "Snack",
+    "expiry_date": "2025-02-01"
   },
   {
     "id": 24,
@@ -364,7 +433,10 @@
     "tags": ["nuts", "protein", "healthy", "snack", "roasted"],
     "numberOfReviews": 234,
     "weight": "454g",
-    "image": "src/images/products/img-24.png"
+    "image": "src/images/products/img-24.png",
+    "color": "Brown",
+    "type": "Snack",
+    "expiry_date": "2025-03-01"
   },
   {
     "id": 25,
@@ -379,7 +451,10 @@
     "tags": ["dessert", "frozen", "vanilla", "creamy", "sweet"],
     "numberOfReviews": 387,
     "weight": "1.89 L",
-    "image": "src/images/products/img-25.png"
+    "image": "src/images/products/img-25.png",
+    "color": "White",
+    "type": "Frozen Dessert",
+    "expiry_date": "2025-01-01"
   },
   {
     "id": 26,
@@ -394,7 +469,10 @@
     "tags": ["pizza", "frozen", "pepperoni", "quick", "convenient"],
     "numberOfReviews": 289,
     "weight": "400g",
-    "image": "src/images/products/img-260.jpg"
+    "image": "src/images/products/img-260.jpg",
+    "color": "Red",
+    "type": "Frozen",
+    "expiry_date": "2025-02-15"
   },
   {
     "id": 27,
@@ -409,7 +487,10 @@
     "tags": ["juice", "breakfast", "vitamin C", "fresh", "natural"],
     "numberOfReviews": 234,
     "weight": "1.89 L",
-    "image": "src/images/products/img-27.jpg"
+    "image": "src/images/products/img-27.jpg",
+    "color": "Orange",
+    "type": "Beverage",
+    "expiry_date": "2024-12-30"
   },
   {
     "id": 28,
@@ -425,7 +506,9 @@
     "tags": ["coffee", "beans", "premium", "Colombian", "beverage"],
     "numberOfReviews": 278,
     "weight": "340g",
-    "image": "src/images/products/img-28.jpg"
+    "image": "src/images/products/img-28.jpg",
+    "color": "Brown",
+    "expiryDate": "2025-12-08"
   },
   {
     "id": 29,
@@ -440,7 +523,9 @@
     "tags": ["natural", "sweet", "local", "raw", "condiment"],
     "numberOfReviews": 201,
     "weight": "454g",
-    "image": "src/images/products/img-29.jpg"
+    "image": "src/images/products/img-29.jpg",
+    "color": "Golden",
+    "expiryDate": "2026-06-01"
   },
   {
     "id": 30,
@@ -455,7 +540,9 @@
     "tags": ["condiment", "tomato", "classic", "savory", "pantry"],
     "numberOfReviews": 312,
     "weight": "946ml",
-    "image": "src/images/products/img-30.jpg"
+    "image": "src/images/products/img-30.jpg",
+    "color": "Red",
+    "expiryDate": "2025-11-15"
   },
   {
     "id": 31,
@@ -470,7 +557,9 @@
     "tags": ["breakfast", "crunchy", "nuts", "dried fruit", "healthy"],
     "numberOfReviews": 178,
     "weight": "340g",
-    "image": "src/images/products/img-31.jpg"
+    "image": "src/images/products/img-31.jpg",
+    "color": "Golden Brown",
+    "expiryDate": "2025-09-30"
   },
   {
     "id": 32,
@@ -485,7 +574,9 @@
     "tags": ["breakfast", "whole grain", "fiber", "healthy", "morning"],
     "numberOfReviews": 289,
     "weight": "510g",
-    "image": "src/images/products/img-32.png"
+    "image": "src/images/products/img-32.png",
+    "color": "Golden",
+    "expiryDate": "2026-03-12"
   },
   {
     "id": 33,
@@ -500,7 +591,9 @@
     "tags": ["household", "cleaning", "absorbent", "paper", "towels"],
     "numberOfReviews": 167,
     "weight": "2.04 kg",
-    "image": "src/images/products/img-33.jpg"
+    "image": "src/images/products/img-33.jpg",
+    "color": "White",
+    "expiryDate": "2027-01-10"
   },
   {
     "id": 34,
@@ -516,7 +609,9 @@
     "tags": ["household", "cleaning", "dish", "soap", "concentrated"],
     "numberOfReviews": 145,
     "weight": "710ml",
-    "image": "src/images/products/img-34.png"
+    "image": "src/images/products/img-34.png",
+    "color": "Clear",
+    "expiryDate": "2025-08-01"
   },
   {
     "id": 35,
@@ -531,7 +626,9 @@
     "tags": ["pet", "dog", "food", "premium", "meat"],
     "numberOfReviews": 178,
     "weight": "6.8 kg",
-    "image": "src/images/products/img-035.jpeg"
+    "image": "src/images/products/img-035.jpeg",
+    "color": "Brown",
+    "expiryDate": "2026-05-22"
   },
   {
     "id": 36,
@@ -546,7 +643,9 @@
     "tags": ["pet", "cat", "litter", "clumping", "dust-free"],
     "numberOfReviews": 156,
     "weight": "9.07 kg",
-    "image": "src/images/products/img-36.jpg"
+    "image": "src/images/products/img-36.jpg",
+    "color": "Gray",
+    "expiryDate": "2026-01-20"
   },
   {
     "id": 37,
@@ -562,7 +661,9 @@
     "tags": ["medicine", "pain relief", "fever", "pharmacy", "health"],
     "numberOfReviews": 134,
     "weight": "100g",
-    "image": "src/images/products/img-37.jpg"
+    "image": "src/images/products/img-37.jpg",
+    "color": "White",
+    "expiryDate": "2027-05-12"
   },
   {
     "id": 38,
@@ -577,7 +678,9 @@
     "tags": ["first aid", "adhesive", "bandages", "pharmacy", "health"],
     "numberOfReviews": 198,
     "weight": "80g",
-    "image": "src/images/products/img-38.jpeg"
+    "image": "src/images/products/img-38.jpeg",
+    "color": "Beige",
+    "expiryDate": "2027-03-18"
   },
   {
     "id": 39,
@@ -592,7 +695,9 @@
     "tags": ["tea", "green", "organic", "healthy", "beverage"],
     "numberOfReviews": 167,
     "weight": "40g",
-    "image": "src/images/products/img-39.jpg"
+    "image": "src/images/products/img-39.jpg",
+    "color": "Green",
+    "expiryDate": "2025-11-22"
   },
   {
     "id": 40,
@@ -608,7 +713,9 @@
     "tags": ["grain", "quinoa", "organic", "protein", "healthy"],
     "numberOfReviews": 145,
     "weight": "454g",
-    "image": "src/images/products/img-40.jpg"
+    "image": "src/images/products/img-40.jpg",
+    "color": "White",
+    "expiryDate": "2026-06-30"
   },
   {
     "id": 41,
@@ -623,7 +730,9 @@
     "tags": ["produce", "avocado", "healthy", "superfood", "fresh"],
     "numberOfReviews": 178,
     "weight": "200g",
-    "image": "src/images/products/img-41.jpg"
+    "image": "src/images/products/img-41.jpg",
+    "color": "Green",
+    "expiryDate": "2025-12-15"
   },
   {
     "id": 42,
@@ -639,6 +748,8 @@
     "tags": ["kombucha", "fermented", "probiotic", "healthy", "drink"],
     "numberOfReviews": 156,
     "weight": "473ml",
-    "image": "src/images/products/img-42.png"
+    "image": "src/images/products/img-42.png",
+    "color": "Varied",
+    "expiryDate": "2025-12-30"
   }
 ]

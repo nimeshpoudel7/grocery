@@ -122,7 +122,8 @@ app.get("/products", (req, res) => {
         products = products.filter(
           (product) =>
             product.name.toLowerCase().includes(search.toLowerCase()) ||
-            product.category.toLowerCase().includes(search.toLowerCase())
+            product.category.toLowerCase().includes(search.toLowerCase()) ||
+            product.price.toString().includes(search)
         );
       }
 
