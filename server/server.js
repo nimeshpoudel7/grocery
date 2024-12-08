@@ -98,6 +98,9 @@ function authenticateToken(req, res, next) {
     next();
   });
 }
+const fs = require("fs");
+const express = require("express");
+const app = express();
 
 app.get("/products", (req, res) => {
   fs.readFile("Product.json", "utf8", (err, data) => {
@@ -110,47 +113,55 @@ app.get("/products", (req, res) => {
 
     try {
       let products = JSON.parse(data);
-      const { filter, filterType } = req.query;
+      const { filter, filterType, search } = req.query;
 
-      // If no filter parameters are provided, return all products
-      if (!filter || !filterType) {
+      // If no filter, filterType, or search is provided, return all products
+      if (!filter && !filterType && !search) {
         return res.json(products);
       }
 
-      // Apply filters if provided
-      switch (filter.toLowerCase()) {
-        case "rating":
-          // Filter products by rating greater than or equal to specified value
-          products = products.filter(
-            (product) => product.rating >= parseFloat(filterType)
-          );
-          break;
+      // Search logic (name or category)
+      if (search) {
+        products = products.filter(
+          (product) =>
+            product.name.toLowerCase().includes(search.toLowerCase()) ||
+            product.category.toLowerCase().includes(search.toLowerCase())
+        );
+      }
 
-        case "category":
-          // Filter products by category
-          products = products.filter(
-            (product) =>
-              product.category.toLowerCase() === filterType.toLowerCase()
-          );
-          break;
+      // Existing filter logic
+      if (filter && filterType) {
+        switch (filter.toLowerCase()) {
+          case "rating":
+            products = products.filter(
+              (product) => product.rating >= parseFloat(filterType)
+            );
+            break;
 
-        case "price":
-          // Sort products by price
-          products.sort((a, b) => {
-            if (filterType.toLowerCase() === "lowtohigh") {
-              return a.price - b.price;
-            } else if (filterType.toLowerCase() === "hightolow") {
-              return b.price - a.price;
-            }
-            return 0;
-          });
-          break;
+          case "category":
+            products = products.filter(
+              (product) =>
+                product.category.toLowerCase() === filterType.toLowerCase()
+            );
+            break;
 
-        default:
-          return res.status(400).json({
-            message:
-              "Invalid filter parameter. Supported filters: price, rating, category",
-          });
+          case "price":
+            products.sort((a, b) => {
+              if (filterType.toLowerCase() === "lowtohigh") {
+                return a.price - b.price;
+              } else if (filterType.toLowerCase() === "hightolow") {
+                return b.price - a.price;
+              }
+              return 0;
+            });
+            break;
+
+          default:
+            return res.status(400).json({
+              message:
+                "Invalid filter parameter. Supported filters: price, rating, category",
+            });
+        }
       }
 
       res.json(products);
@@ -162,6 +173,74 @@ app.get("/products", (req, res) => {
     }
   });
 });
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
+
+// app.get("/products", (req, res) => {
+//   fs.readFile("Product.json", "utf8", (err, data) => {
+//     if (err) {
+//       return res.status(500).json({
+//         message: "Error reading products.",
+//         error: err.message,
+//       });
+//     }
+
+//     try {
+//       let products = JSON.parse(data);
+//       const { filter, filterType } = req.query;
+
+//       // If no filter parameters are provided, return all products
+//       if (!filter || !filterType) {
+//         return res.json(products);
+//       }
+
+//       // Apply filters if provided
+//       switch (filter.toLowerCase()) {
+//         case "rating":
+//           // Filter products by rating greater than or equal to specified value
+//           products = products.filter(
+//             (product) => product.rating >= parseFloat(filterType)
+//           );
+//           break;
+
+//         case "category":
+//           // Filter products by category
+//           products = products.filter(
+//             (product) =>
+//               product.category.toLowerCase() === filterType.toLowerCase()
+//           );
+//           break;
+
+//         case "price":
+//           // Sort products by price
+//           products.sort((a, b) => {
+//             if (filterType.toLowerCase() === "lowtohigh") {
+//               return a.price - b.price;
+//             } else if (filterType.toLowerCase() === "hightolow") {
+//               return b.price - a.price;
+//             }
+//             return 0;
+//           });
+//           break;
+
+//         default:
+//           return res.status(400).json({
+//             message:
+//               "Invalid filter parameter. Supported filters: price, rating, category",
+//           });
+//       }
+
+//       res.json(products);
+//     } catch (parseError) {
+//       return res.status(500).json({
+//         message: "Error parsing products data.",
+//         error: parseError.message,
+//       });
+//     }
+//   });
+// });
 app.get("/popular-product", (req, res) => {
   fs.readFile("Product.json", "utf8", (err, data) => {
     if (err)
