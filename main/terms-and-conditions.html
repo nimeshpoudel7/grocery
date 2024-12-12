@@ -1,690 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contact | buynery</title>
-    <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
-    <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
-    <link rel="stylesheet" href="src/lib/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="src/lib/css/bvselect.css" />
-    <link rel="stylesheet" href="src/lib/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Contact | buynery</title>
+  <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" />
+  <link rel="stylesheet" href="src/lib/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/lib/css/bvselect.css" />
+  <link rel="stylesheet" href="src/lib/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
 
-  <body>
-    <div class="loader">
-      <div class="loader-icon">
-        <img src="src/images/loader.gif" alt="loader" />
-      </div>
+<body>
+  <div class="loader">
+    <div class="loader-icon">
+      <img src="src/images/loader.gif" alt="loader" />
     </div>
-    <!-- Shopping Cart sidebar  start  -->
-    <div class="shopping-cart">
-      <div class="shopping-cart-top">
-        <div class="shopping-cart-header">
-          <h5 class="font-body--xxl-500">
-            Shopping Cart (<span class="count">2</span>)
-          </h5>
-          <button class="close">
-            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="22.5" cy="22.5" r="22.5" fill="white" />
-              <path d="M28.75 16.25L16.25 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M16.25 16.25L28.75 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="shopping-cart__product-content">
-          <div class="shopping-cart__product-content-item">
-            <div class="img-wrapper">
-              <img src="src/images/products/img-01.png" alt="product" />
-            </div>
-            <div class="text-content">
-              <h5 class="font-body--md-400">Fresh Indian Orange</h5>
-              <p class="font-body--md-400">
-                1kg x <span class="font-body--md-500">12.00</span>
-              </p>
-            </div>
-          </div>
-          <button class="delete-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z"
-                stroke="#CCCCCC" stroke-miterlimit="10" />
-              <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="shopping-cart__product-content">
-          <div class="shopping-cart__product-content-item">
-            <div class="img-wrapper">
-              <img src="src/images/products/img-01.png" alt="product" />
-            </div>
-            <div class="text-content">
-              <h5 class="font-body--md-400">Fresh Indian Orange</h5>
-              <p class="font-body--md-400">
-                1kg x <span class="font-body--md-500">12.00</span>
-              </p>
-            </div>
-          </div>
-          <button class="delete-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z"
-                stroke="#CCCCCC" stroke-miterlimit="10" />
-              <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="shopping-cart-bottom">
-        <div class="shopping-cart-product-info">
-          <p class="product-count font-body--lg-400">2 Product</p>
-          <span class="product-price font-body--lg-500">$26.00</span>
-        </div>
-
-        <form action="#">
-          <button class="button button--lg w-100">Checkout</button>
-          <a href="shopping-cart.html" class="button button--lg button--disable w-100">
-            go to cart
-          </a>
-        </form>
-      </div>
-    </div>
-    <!-- Shopping Cart sidebar  end ---->
-
-    <!-- Header Section start -->
-    <header class="header header--one">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-content">
-            <div class="header__top-left">
-              <p class="font-body--sm">
-                <span>
-                  <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 8.36364C16 14.0909 8.5 19 8.5 19C8.5 19 1 14.0909 1 8.36364C1 6.41068 1.79018 4.53771 3.1967 3.15676C4.60322 1.77581 6.51088 1 8.5 1C10.4891 1 12.3968 1.77581 13.8033 3.15676C15.2098 4.53771 16 6.41068 16 8.36364Z"
-                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M8.5 10.8182C9.88071 10.8182 11 9.71925 11 8.36364C11 7.00803 9.88071 5.90909 8.5 5.90909C7.11929 5.90909 6 7.00803 6 8.36364C6 9.71925 7.11929 10.8182 8.5 10.8182Z"
-                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-                Store Location: Lincoln- 398 Royal York Road, Toronto, Canada
-              </p>
-            </div>
-            <div class="header__top-right">
-
-              <div class="header__in">
-                <a href="sign-in.html">Sign in </a>
-                <span>/</span>
-                <a href="create-account.html">Sign up</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__center">
-        <div class="container">
-          <div class="header__center-content">
-            <div class="header__brand">
-              <button class="header__sidebar-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M3 6H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M3 18H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-              <a href="index.html">
-                <img src="src/images/logo.png" alt="brand-logo" />
-              </a>
-            </div>
-            <form action="#">
-              <div class="header__input-form">
-                <input type="text" placeholder="Search" />
-                <span class="search-icon">
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
-                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <button type="submit" class="search-btn button button--md">
-                  Search
-                </button>
-              </div>
-            </form>
-            <div class="header__cart">
-              <div class="header__cart-item">
-                <a class="fav" href="wishlist.html">
-                  <svg width="25" height="23" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z"
-                      stroke="#1A1A1A" stroke-width="1.5" />
-                  </svg>
-                </a>
-              </div>
-              <div class="header__cart-item">
-                <div class="header__cart-item-content" id="cart-bag">
-                  <button class="cart-bag">
-                    <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.3333 14.6667H7.08333L4.25 30.25H29.75L26.9167 14.6667H22.6667M11.3333 14.6667V10.4167C11.3333 7.28705 13.8704 4.75 17 4.75V4.75C20.1296 4.75 22.6667 7.28705 22.6667 10.4167V14.6667M11.3333 14.6667H22.6667M11.3333 14.6667V18.9167M22.6667 14.6667V18.9167"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <span class="item-number">0</span>
-                  </button>
-                  <div class="header__cart-item-content-info">
-                    <h5>Shopping cart:</h5>
-                    <span class="price">$0.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="profileLogo header__cart-item" style="margin-left: 15px;">
-                <a class="fav" href="user-dashboard.html">
-                  <svg width="25px" height="35px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-
-                    <defs>
-
-                      <style>
-                        .cls-1 {
-                          fill: #182d1b;
-                        }
-
-                        .cls-2 {
-                          fill: #00b207;
-                        }
-                      </style>
-
-                    </defs>
-
-                    <title />
-
-                    <g id="fill">
-
-                      <circle class="cls-1" cx="16" cy="7.48" r="5.48" />
-
-                      <path class="cls-2"
-                        d="M23.54,30H8.46a4.8,4.8,0,0,1-4.8-4.8h0A10.29,10.29,0,0,1,13.94,14.92h4.12A10.29,10.29,0,0,1,28.34,25.2h0A4.8,4.8,0,0,1,23.54,30Z" />
-
-                    </g>
-
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom header__bottom--white">
-        <div class="container">
-          <div class="header__bottom-content">
-            <ul class="header__navigation-menu header__navigation-menu--two">
-              <li class="header__navigation-menu-link">
-                <a href="index.html">
-                  Home
-
-                </a>
-
-              </li>
-              <li class="header__navigation-menu-link">
-                <a href="#">
-                  Product
-                  <span class="drop-icon">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </a>
-                <ul class="header__navigation-drop-menu">
-                  <li class="header__navigation-drop-menu-link">
-                    <a href="product.html">All Product</a>
-                  </li>
-                </ul>
-              </li>
-
-
-              <li class="header__navigation-menu-link active">
-                <a href="contact.html">Contact us</a>
-              </li>
-            </ul>
-
-            <a href="#" class="header__telephone-number dark">
-              <span>
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14.4359 2.375C15.9193 2.77396 17.2718 3.55567 18.358 4.64184C19.4441 5.72801 20.2258 7.08051 20.6248 8.56388"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M13.5306 5.75687C14.4205 5.99625 15.2318 6.46521 15.8833 7.11678C16.5349 7.76835 17.0039 8.57967 17.2433 9.46949"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M7.115 11.6517C8.02238 13.5074 9.5263 15.0049 11.3859 15.9042C11.522 15.9688 11.6727 15.9966 11.8229 15.9851C11.9731 15.9736 12.1178 15.9231 12.2425 15.8386L14.9812 14.0134C15.1022 13.9326 15.2414 13.8833 15.3862 13.8698C15.5311 13.8564 15.677 13.8793 15.8107 13.9364L20.9339 16.1326C21.1079 16.2065 21.2532 16.335 21.3479 16.4987C21.4426 16.6623 21.4815 16.8523 21.4589 17.04C21.2967 18.307 20.6784 19.4714 19.7196 20.3154C18.7608 21.1593 17.5273 21.6249 16.25 21.625C12.3049 21.625 8.52139 20.0578 5.73179 17.2682C2.94218 14.4786 1.375 10.6951 1.375 6.75C1.37512 5.47279 1.84074 4.23941 2.68471 3.28077C3.52867 2.32213 4.6931 1.70396 5.96 1.542C6.14771 1.51936 6.33769 1.55832 6.50134 1.653C6.66499 1.74769 6.79345 1.89298 6.86738 2.067L9.06537 7.1945C9.1219 7.32698 9.14485 7.47137 9.13218 7.61485C9.11951 7.75833 9.07162 7.89647 8.99275 8.017L7.17275 10.7977C7.09015 10.923 7.04141 11.0675 7.03129 11.2171C7.02117 11.3668 7.05001 11.5165 7.115 11.6517V11.6517Z"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-
-                (437) 955-2989
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__sidebar">
-        <button class="header__cross">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+  </div>
+  <!-- Shopping Cart sidebar  start  -->
+  <div class="shopping-cart">
+    <div class="shopping-cart-top">
+      <div class="shopping-cart-header">
+        <h5 class="font-body--xxl-500">
+          Shopping Cart (<span class="count">2</span>)
+        </h5>
+        <button class="close">
+          <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22.5" cy="22.5" r="22.5" fill="white" />
+            <path d="M28.75 16.25L16.25 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
               stroke-linejoin="round" />
-            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            <path d="M16.25 16.25L28.75 28.75" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg>
         </button>
-        <div class="header__mobile-sidebar">
-          <div class="header__mobile-top">
-            <form action="#">
-              <div class="header__mobile-input">
-                <input type="text" placeholder="Search" />
-                <button class="search-btn">
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </div>
+
+      <div class="shopping-cart__product-content">
+        <div class="shopping-cart__product-content-item">
+          <div class="img-wrapper">
+            <img src="src/images/products/img-01.png" alt="product" />
+          </div>
+          <div class="text-content">
+            <h5 class="font-body--md-400">Fresh Indian Orange</h5>
+            <p class="font-body--md-400">
+              1kg x <span class="font-body--md-500">12.00</span>
+            </p>
+          </div>
+        </div>
+        <button class="delete-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z"
+              stroke="#CCCCCC" stroke-miterlimit="10" />
+            <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="shopping-cart__product-content">
+        <div class="shopping-cart__product-content-item">
+          <div class="img-wrapper">
+            <img src="src/images/products/img-01.png" alt="product" />
+          </div>
+          <div class="text-content">
+            <h5 class="font-body--md-400">Fresh Indian Orange</h5>
+            <p class="font-body--md-400">
+              1kg x <span class="font-body--md-500">12.00</span>
+            </p>
+          </div>
+        </div>
+        <button class="delete-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 23C18.0748 23 23 18.0748 23 12C23 5.92525 18.0748 1 12 1C5.92525 1 1 5.92525 1 12C1 18.0748 5.92525 23 12 23Z"
+              stroke="#CCCCCC" stroke-miterlimit="10" />
+            <path d="M16 8L8 16" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 16L8 8" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="shopping-cart-bottom">
+      <div class="shopping-cart-product-info">
+        <p class="product-count font-body--lg-400">2 Product</p>
+        <span class="product-price font-body--lg-500">$26.00</span>
+      </div>
+
+      <form action="#">
+        <button class="button button--lg w-100">Checkout</button>
+        <a href="shopping-cart.html" class="button button--lg button--disable w-100">
+          go to cart
+        </a>
+      </form>
+    </div>
+  </div>
+  <!-- Shopping Cart sidebar  end ---->
+
+  <!-- Header Section start -->
+  <header class="header header--one">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-content">
+          <div class="header__top-left">
+            <p class="font-body--sm">
+              <span>
+                <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 8.36364C16 14.0909 8.5 19 8.5 19C8.5 19 1 14.0909 1 8.36364C1 6.41068 1.79018 4.53771 3.1967 3.15676C4.60322 1.77581 6.51088 1 8.5 1C10.4891 1 12.3968 1.77581 13.8033 3.15676C15.2098 4.53771 16 6.41068 16 8.36364Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M8.5 10.8182C9.88071 10.8182 11 9.71925 11 8.36364C11 7.00803 9.88071 5.90909 8.5 5.90909C7.11929 5.90909 6 7.00803 6 8.36364C6 9.71925 7.11929 10.8182 8.5 10.8182Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              Store Location: Lincoln- 398 Royal York Road, Toronto, Canada
+            </p>
+          </div>
+          <div class="header__top-right">
+
+            <div class="header__in">
+              <a href="sign-in.html">Sign in </a>
+              <span>/</span>
+              <a href="create-account.html">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="container">
+        <div class="header__center-content">
+          <div class="header__brand">
+            <button class="header__sidebar-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M3 6H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M3 18H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <a href="index.html">
+              <img src="src/images/logo.png" alt="brand-logo" />
+            </a>
+          </div>
+          <form action="#">
+            <div class="header__input-form">
+              <input type="text" placeholder="Search" />
+              <span class="search-icon">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <button type="submit" class="search-btn button button--md">
+                Search
+              </button>
+            </div>
+          </form>
+          <div class="header__cart">
+            <div class="header__cart-item">
+              <a class="fav" href="wishlist.html">
+                <svg width="25" height="23" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z"
+                    stroke="#1A1A1A" stroke-width="1.5" />
+                </svg>
+              </a>
+            </div>
+            <div class="header__cart-item">
+              <div class="header__cart-item-content" id="cart-bag">
+                <button class="cart-bag">
+                  <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
+                      d="M11.3333 14.6667H7.08333L4.25 30.25H29.75L26.9167 14.6667H22.6667M11.3333 14.6667V10.4167C11.3333 7.28705 13.8704 4.75 17 4.75V4.75C20.1296 4.75 22.6667 7.28705 22.6667 10.4167V14.6667M11.3333 14.6667H22.6667M11.3333 14.6667V18.9167M22.6667 14.6667V18.9167"
                       stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
                   </svg>
+                  <span class="item-number">0</span>
                 </button>
+                <div class="header__cart-item-content-info">
+                  <h5>Shopping cart:</h5>
+                  <span class="price">$0.00</span>
+                </div>
               </div>
-            </form>
-            <ul class="header__mobile-menu">
-              <li class="header__mobile-menu-item">
-                <a href="index.html" class="header__mobile-menu-item-link">
-                  Home
+            </div>
+            <div class="profileLogo header__cart-item" style="margin-left: 15px;">
+              <a class="fav" href="user-dashboard.html">
+                <svg width="25px" height="35px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 
+                  <defs>
+
+                    <style>
+                      .cls-1 {
+                        fill: #182d1b;
+                      }
+
+                      .cls-2 {
+                        fill: #00b207;
+                      }
+                    </style>
+
+                  </defs>
+
+                  <title />
+
+                  <g id="fill">
+
+                    <circle class="cls-1" cx="16" cy="7.48" r="5.48" />
+
+                    <path class="cls-2"
+                      d="M23.54,30H8.46a4.8,4.8,0,0,1-4.8-4.8h0A10.29,10.29,0,0,1,13.94,14.92h4.12A10.29,10.29,0,0,1,28.34,25.2h0A4.8,4.8,0,0,1,23.54,30Z" />
+
+                  </g>
+
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom header__bottom--white">
+      <div class="container">
+        <div class="header__bottom-content">
+          <ul class="header__navigation-menu header__navigation-menu--two">
+            <li class="header__navigation-menu-link">
+              <a href="index.html">
+                Home
+
+              </a>
+
+            </li>
+            <li class="header__navigation-menu-link">
+              <a href="#">
+                Product
+                <span class="drop-icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+              <ul class="header__navigation-drop-menu">
+                <li class="header__navigation-drop-menu-link">
+                  <a href="product.html">All Product</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="header__navigation-menu-link active">
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__telephone-number dark">
+            <span>
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.4359 2.375C15.9193 2.77396 17.2718 3.55567 18.358 4.64184C19.4441 5.72801 20.2258 7.08051 20.6248 8.56388"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M13.5306 5.75687C14.4205 5.99625 15.2318 6.46521 15.8833 7.11678C16.5349 7.76835 17.0039 8.57967 17.2433 9.46949"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M7.115 11.6517C8.02238 13.5074 9.5263 15.0049 11.3859 15.9042C11.522 15.9688 11.6727 15.9966 11.8229 15.9851C11.9731 15.9736 12.1178 15.9231 12.2425 15.8386L14.9812 14.0134C15.1022 13.9326 15.2414 13.8833 15.3862 13.8698C15.5311 13.8564 15.677 13.8793 15.8107 13.9364L20.9339 16.1326C21.1079 16.2065 21.2532 16.335 21.3479 16.4987C21.4426 16.6623 21.4815 16.8523 21.4589 17.04C21.2967 18.307 20.6784 19.4714 19.7196 20.3154C18.7608 21.1593 17.5273 21.6249 16.25 21.625C12.3049 21.625 8.52139 20.0578 5.73179 17.2682C2.94218 14.4786 1.375 10.6951 1.375 6.75C1.37512 5.47279 1.84074 4.23941 2.68471 3.28077C3.52867 2.32213 4.6931 1.70396 5.96 1.542C6.14771 1.51936 6.33769 1.55832 6.50134 1.653C6.66499 1.74769 6.79345 1.89298 6.86738 2.067L9.06537 7.1945C9.1219 7.32698 9.14485 7.47137 9.13218 7.61485C9.11951 7.75833 9.07162 7.89647 8.99275 8.017L7.17275 10.7977C7.09015 10.923 7.04141 11.0675 7.03129 11.2171C7.02117 11.3668 7.05001 11.5165 7.115 11.6517V11.6517Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              (437) 955-2989
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__sidebar">
+      <button class="header__cross">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="header__mobile-sidebar">
+        <div class="header__mobile-top">
+          <form action="#">
+            <div class="header__mobile-input">
+              <input type="text" placeholder="Search" />
+              <button class="search-btn">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.4999 18L13.8749 14.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <ul class="header__mobile-menu">
+            <li class="header__mobile-menu-item">
+              <a href="index.html" class="header__mobile-menu-item-link">
+                Home
+
+              </a>
+            </li>
+            <li class="header__mobile-menu-item">
+              <a href="#" class="header__mobile-menu-item-link">
+                Product
+                <span class="drop-icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+              <ul class="header__mobile-dropdown-menu">
+                <li class="header__mobile-dropdown-menu-link">
+                  <a href="product.html">All Product</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header__mobile-menu-item">
+              <a href="contact.html" class="header__mobile-menu-item-link active">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-bottom">
+          <div class="header__mobile-user">
+            <div class="header__mobile-user--img">
+              <img src="src/images/user/img-03.png" alt="user" />
+            </div>
+            <div class="header__mobile-user--info">
+              <h2 class="font-body--lg-500">Dianne Russell</h2>
+              <p class="font-body--md-400">dianne.russell@gmail.com</p>
+            </div>
+          </div>
+          <div class="header__mobile-action d-none">
+            <a href="#" class="button button--md">Sign in</a>
+            <a href="#" class="button button--md button--disable">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header  Section start -->
+
+  <!-- breedcrumb section start  -->
+  <section class="section breedcrumb">
+    <div class="breedcrumb__img-wrapper">
+      <img src="src/images/banner/breedcrumb.jpg" alt="breedcrumb" />
+      <div class="container">
+        <ul class="breedcrumb__content">
+          <li>
+            <a href="index.html">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 8L9 1L17 8V18H12V14C12 13.2044 11.6839 12.4413 11.1213 11.8787C10.5587 11.3161 9.79565 11 9 11C8.20435 11 7.44129 11.3161 6.87868 11.8787C6.31607 12.4413 6 13.2044 6 14V18H1V8Z"
+                  stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span> > </span>
+            </a>
+          </li>
+          <li class="active"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- breedcrumb section end   -->
+
+  <!--Add Terms and COnditions Here-->
+  <section class="terms-section section section--xl">
+    <div class="container">
+      <div class="row terms-section__content">
+        <div class="col-lg-3">
+          <div class="terms-section__quick-links">
+            <div class="terms-section__quick-links--item">
+              <span class="icon">
+                <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26 14.3438V20.7188" stroke="#2C742F" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M26 33.4688V39.8438" stroke="#2C742F" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M26 46.2188C37.0457 46.2188 46 37.2645 46 26.2188C46 15.1731 37.0457 6.21875 26 6.21875C14.9543 6.21875 6 15.1731 6 26.2188C6 37.2645 14.9543 46.2188 26 46.2188Z"
+                    stroke="#2C742F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M26 33.4688C29.3137 33.4688 32 30.7825 32 27.4688C32 24.1551 29.3137 21.4688 26 21.4688C22.6863 21.4688 20 24.1551 20 27.4688C20 30.7825 22.6863 33.4688 26 33.4688Z"
+                    stroke="#2C742F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h4>Quick Navigation</h4>
+            </div>
+            <ul class="terms-nav">
+              <li>
+                <a href="#acceptance">
+                  <span class="nav-number">01.</span>Acceptance of Terms
                 </a>
               </li>
-              <li class="header__mobile-menu-item">
-                <a href="#" class="header__mobile-menu-item-link">
-                  Product
-                  <span class="drop-icon">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.33332 5.66667L7.99999 10.3333L12.6667 5.66667" stroke="currentColor"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
+              <li>
+                <a href="#ordering">
+                  <span class="nav-number">02.</span>Ordering & Delivery
                 </a>
-                <ul class="header__mobile-dropdown-menu">
-                  <li class="header__mobile-dropdown-menu-link">
-                    <a href="product.html">All Product</a>
-                  </li>
-                </ul>
               </li>
-
-              <li class="header__mobile-menu-item">
-                <a href="contact.html" class="header__mobile-menu-item-link active">Contacts</a>
+              <li>
+                <a href="#pricing">
+                  <span class="nav-number">03.</span>Pricing & Payment
+                </a>
+              </li>
+              <li>
+                <a href="#returns">
+                  <span class="nav-number">04.</span>Returns & Refunds
+                </a>
+              </li>
+              <li>
+                <a href="#privacy">
+                  <span class="nav-number">05.</span>Privacy Policy
+                </a>
               </li>
             </ul>
           </div>
-          <div class="header__mobile-bottom">
-            <div class="header__mobile-user">
-              <div class="header__mobile-user--img">
-                <img src="src/images/user/img-03.png" alt="user" />
-              </div>
-              <div class="header__mobile-user--info">
-                <h2 class="font-body--lg-500">Dianne Russell</h2>
-                <p class="font-body--md-400">dianne.russell@gmail.com</p>
-              </div>
-            </div>
-            <div class="header__mobile-action d-none">
-              <a href="#" class="button button--md">Sign in</a>
-              <a href="#" class="button button--md button--disable">Sign up</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </header>
-    <!-- Header  Section start -->
-
-    <!-- breedcrumb section start  -->
-    <section class="section breedcrumb">
-      <div class="breedcrumb__img-wrapper">
-        <img src="src/images/banner/breedcrumb.jpg" alt="breedcrumb" />
-        <div class="container">
-          <ul class="breedcrumb__content">
-            <li>
-              <a href="index.html">
-                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1 8L9 1L17 8V18H12V14C12 13.2044 11.6839 12.4413 11.1213 11.8787C10.5587 11.3161 9.79565 11 9 11C8.20435 11 7.44129 11.3161 6.87868 11.8787C6.31607 12.4413 6 13.2044 6 14V18H1V8Z"
-                    stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span> > </span>
-              </a>
-            </li>
-            <li class="active"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- breedcrumb section end   -->
-
-    <!--Add Terms and COnditions Here-->
-    <section class="terms-section section section--xl">
-      <div class="container">
-        <div class="row terms-section__content">
-          <div class="col-lg-3">
-            <div class="terms-section__quick-links">
-              <div class="terms-section__quick-links--item">
-                <span class="icon">
-                  <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M26 14.3438V20.7188" stroke="#2C742F" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M26 33.4688V39.8438" stroke="#2C742F" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
+        <div class="col-lg-9">
+          <div class="terms-content-card">
+            <div class="header-section">
+              <h2>Terms and Conditions</h2>
+              <div class="header-divider"></div>
+              <p class="terms-intro">
+                Welcome to FreshMart! These terms and conditions outline the rules and regulations for using our
+                grocery delivery service.
+              </p>
+            </div>
+            <div class="terms-section" id="acceptance">
+              <div class="section-header">
+                <span class="section-number">01</span>
+                <span class="section-icon">
+                  <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M26 46.2188C37.0457 46.2188 46 37.2645 46 26.2188C46 15.1731 37.0457 6.21875 26 6.21875C14.9543 6.21875 6 15.1731 6 26.2188C6 37.2645 14.9543 46.2188 26 46.2188Z"
-                      stroke="#2C742F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M26 33.4688C29.3137 33.4688 32 30.7825 32 27.4688C32 24.1551 29.3137 21.4688 26 21.4688C22.6863 21.4688 20 24.1551 20 27.4688C20 30.7825 22.6863 33.4688 26 33.4688Z"
-                      stroke="#2C742F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      d="M46 25.5C46 36.5457 37.0457 45.5 26 45.5C14.9543 45.5 6 36.5457 6 25.5C6 14.4543 14.9543 5.5 26 5.5C37.0457 5.5 46 14.4543 46 25.5Z" />
+                    <path d="M26 15.5V31.5" />
+                    <path d="M18 23.5L26 31.5L34 23.5" />
                   </svg>
                 </span>
-                <h4>Quick Navigation</h4>
+                <h3>Acceptance of Terms</h3>
               </div>
-              <ul class="terms-nav">
-                <li>
-                  <a href="#acceptance">
-                    <span class="nav-number">01.</span>Acceptance of Terms
-                  </a>
-                </li>
-                <li>
-                  <a href="#ordering">
-                    <span class="nav-number">02.</span>Ordering & Delivery
-                  </a>
-                </li>
-                <li>
-                  <a href="#pricing">
-                    <span class="nav-number">03.</span>Pricing & Payment
-                  </a>
-                </li>
-                <li>
-                  <a href="#returns">
-                    <span class="nav-number">04.</span>Returns & Refunds
-                  </a>
-                </li>
-                <li>
-                  <a href="#privacy">
-                    <span class="nav-number">05.</span>Privacy Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="terms-content-card">
-              <div class="header-section">
-                <h2>Terms and Conditions</h2>
-                <div class="header-divider"></div>
-                <p class="terms-intro">
-                  Welcome to FreshMart! These terms and conditions outline the rules and regulations for using our
-                  grocery delivery service.
+              <div class="section-content">
+                <p>
+                  By accessing and placing an order through our website, you confirm that you are in agreement with
+                  and bound by the terms of service contained in the Terms & Conditions outlined here.
                 </p>
               </div>
-              <div class="terms-section" id="acceptance">
-                <div class="section-header">
-                  <span class="section-number">01</span>
-                  <span class="section-icon">
-                    <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M46 25.5C46 36.5457 37.0457 45.5 26 45.5C14.9543 45.5 6 36.5457 6 25.5C6 14.4543 14.9543 5.5 26 5.5C37.0457 5.5 46 14.4543 46 25.5Z" />
-                      <path d="M26 15.5V31.5" />
-                      <path d="M18 23.5L26 31.5L34 23.5" />
-                    </svg>
-                  </span>
-                  <h3>Acceptance of Terms</h3>
-                </div>
-                <div class="section-content">
-                  <p>
-                    By accessing and placing an order through our website, you confirm that you are in agreement with
-                    and bound by the terms of service contained in the Terms & Conditions outlined here.
-                  </p>
-                </div>
-              </div>
-              <div class="terms-section" id="ordering">
-                <div class="section-header">
-                  <span class="section-number">02</span>
-                  <span class="section-icon">
-                    <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M41.9375 25.7188C41.9375 40.0625 26 46.2188 26 46.2188C26 46.2188 10.0625 40.0625 10.0625 25.7188C10.0625 21.4919 11.7416 17.4381 14.7305 14.4492C17.7193 11.4604 21.7731 9.78125 26 9.78125C30.2269 9.78125 34.2807 11.4604 37.2695 14.4492C40.2584 17.4381 41.9375 21.4919 41.9375 25.7188Z" />
-                      <path
-                        d="M26 32.0938C29.3137 32.0938 32 29.4075 32 26.0938C32 22.7801 29.3137 20.0938 26 20.0938C22.6863 20.0938 20 22.7801 20 26.0938C20 29.4075 22.6863 32.0938 26 32.0938Z" />
-                    </svg>
-                  </span>
-                  <h3>Ordering & Delivery</h3>
-                </div>
-                <div class="section-content">
-                  <ul class="terms-list">
-                    <li>All orders are subject to product availability and delivery area coverage.</li>
-                    <li>Delivery times shown are estimates and not guaranteed.</li>
-                    <li>We reserve the right to limit order quantities of specific items.</li>
-                    <li>Minimum order value may apply for delivery service.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="terms-section" id="pricing">
-                <div class="section-header">
-                  <span class="section-number">03</span>
-                  <span class="section-icon">
-                    <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M46 31.5C46 33.3565 45.2625 35.137 43.9497 36.4497C42.637 37.7625 40.8565 38.5 39 38.5H13C11.1435 38.5 9.36301 37.7625 8.05025 36.4497C6.7375 35.137 6 33.3565 6 31.5V19.5C6 17.6435 6.7375 15.863 8.05025 14.5503C9.36301 13.2375 11.1435 12.5 13 12.5H39C40.8565 12.5 42.637 13.2375 43.9497 14.5503C45.2625 15.863 46 17.6435 46 19.5V31.5Z" />
-                      <path d="M13 25.5H39" />
-                    </svg>
-                  </span>
-                  <h3>Pricing & Payment</h3>
-                </div>
-                <div class="section-content">
-                  <ul class="terms-list">
-                    <li>All prices are subject to change without notice.</li>
-                    <li>Price displayed at checkout is final price including taxes.</li>
-                    <li>Accepted payment methods include credit cards, debit cards, and digital wallets.</li>
-                    <li>Promotional codes must be applied before checkout completion.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="terms-section" id="returns">
-                <div class="section-header">
-                  <span class="section-number">04</span>
-                  <span class="section-icon">
-                    <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 25.5H46" />
-                      <path d="M6 25.5L16 15.5" />
-                      <path d="M6 25.5L16 35.5" />
-                    </svg>
-                  </span>
-                  <h3>Returns & Refunds</h3>
-                </div>
-                <div class="section-content">
-                  <ul class="terms-list">
-                    <li>Damaged or incorrect items must be reported within 24 hours of delivery.</li>
-                    <li>Perishable items cannot be returned but may be refunded if quality issues exist.</li>
-                    <li>Non-perishable items in original packaging may be returned within 7 days.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="terms-section" id="privacy">
-                <div class="section-header">
-                  <span class="section-number">05</span>
-                  <span class="section-icon">
-                    <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M26 46.2188C37.0457 46.2188 46 37.2645 46 26.2188C46 15.1731 37.0457 6.21875 26 6.21875C14.9543 6.21875 6 15.1731 6 26.2188C6 37.2645 14.9543 46.2188 26 46.2188Z" />
-                      <path d="M26 16.2188V26.2188L32 32.2188" />
-                    </svg>
-                  </span>
-                  <h3>Privacy Policy</h3>
-                </div>
-
-                <div class="section-content">
-                  <ul class="terms-list">
-                    <li>Personal information collected will be used for order processing and delivery.</li>
-                    <li>Payment information is encrypted and stored securely.</li>
-                    <li>Customer data will not be shared with third parties except as required for delivery services.
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-
-            <div class="terms-footer">
-              <div class="update-info">
-                <span class="update-label">Last Updated:</span>
-                <span class="update-date">November 17, 2024</span>
-              </div>
-              <div class="terms-contact">
-                <p>Have questions about our terms?</p>
-                <button class="button button--md">
-                  Contact Support
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
+            <div class="terms-section" id="ordering">
+              <div class="section-header">
+                <span class="section-number">02</span>
+                <span class="section-icon">
+                  <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M41.9375 25.7188C41.9375 40.0625 26 46.2188 26 46.2188C26 46.2188 10.0625 40.0625 10.0625 25.7188C10.0625 21.4919 11.7416 17.4381 14.7305 14.4492C17.7193 11.4604 21.7731 9.78125 26 9.78125C30.2269 9.78125 34.2807 11.4604 37.2695 14.4492C40.2584 17.4381 41.9375 21.4919 41.9375 25.7188Z" />
+                    <path
+                      d="M26 32.0938C29.3137 32.0938 32 29.4075 32 26.0938C32 22.7801 29.3137 20.0938 26 20.0938C22.6863 20.0938 20 22.7801 20 26.0938C20 29.4075 22.6863 32.0938 26 32.0938Z" />
                   </svg>
-                </button>
+                </span>
+                <h3>Ordering & Delivery</h3>
+              </div>
+              <div class="section-content">
+                <ul class="terms-list">
+                  <li>All orders are subject to product availability and delivery area coverage.</li>
+                  <li>Delivery times shown are estimates and not guaranteed.</li>
+                  <li>We reserve the right to limit order quantities of specific items.</li>
+                  <li>Minimum order value may apply for delivery service.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="terms-section" id="pricing">
+              <div class="section-header">
+                <span class="section-number">03</span>
+                <span class="section-icon">
+                  <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M46 31.5C46 33.3565 45.2625 35.137 43.9497 36.4497C42.637 37.7625 40.8565 38.5 39 38.5H13C11.1435 38.5 9.36301 37.7625 8.05025 36.4497C6.7375 35.137 6 33.3565 6 31.5V19.5C6 17.6435 6.7375 15.863 8.05025 14.5503C9.36301 13.2375 11.1435 12.5 13 12.5H39C40.8565 12.5 42.637 13.2375 43.9497 14.5503C45.2625 15.863 46 17.6435 46 19.5V31.5Z" />
+                    <path d="M13 25.5H39" />
+                  </svg>
+                </span>
+                <h3>Pricing & Payment</h3>
+              </div>
+              <div class="section-content">
+                <ul class="terms-list">
+                  <li>All prices are subject to change without notice.</li>
+                  <li>Price displayed at checkout is final price including taxes.</li>
+                  <li>Accepted payment methods include credit cards, debit cards, and digital wallets.</li>
+                  <li>Promotional codes must be applied before checkout completion.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="terms-section" id="returns">
+              <div class="section-header">
+                <span class="section-number">04</span>
+                <span class="section-icon">
+                  <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 25.5H46" />
+                    <path d="M6 25.5L16 15.5" />
+                    <path d="M6 25.5L16 35.5" />
+                  </svg>
+                </span>
+                <h3>Returns & Refunds</h3>
+              </div>
+              <div class="section-content">
+                <ul class="terms-list">
+                  <li>Damaged or incorrect items must be reported within 24 hours of delivery.</li>
+                  <li>Perishable items cannot be returned but may be refunded if quality issues exist.</li>
+                  <li>Non-perishable items in original packaging may be returned within 7 days.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="terms-section" id="privacy">
+              <div class="section-header">
+                <span class="section-number">05</span>
+                <span class="section-icon">
+                  <svg viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M26 46.2188C37.0457 46.2188 46 37.2645 46 26.2188C46 15.1731 37.0457 6.21875 26 6.21875C14.9543 6.21875 6 15.1731 6 26.2188C6 37.2645 14.9543 46.2188 26 46.2188Z" />
+                    <path d="M26 16.2188V26.2188L32 32.2188" />
+                  </svg>
+                </span>
+                <h3>Privacy Policy</h3>
+              </div>
+
+              <div class="section-content">
+                <ul class="terms-list">
+                  <li>Personal information collected will be used for order processing and delivery.</li>
+                  <li>Payment information is encrypted and stored securely.</li>
+                  <li>Customer data will not be shared with third parties except as required for delivery services.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-    </section>
 
-
-    <!--Footer Section Start  -->
-    <!--Footer Section Start  -->
-    <footer class="footer footer--one">
-      <div class="container">
-        <div class="footer__top">
-          <div class="row">
-            <!-- Brand information-->
-            <div class="col-lg-4">
-              <div class="footer__brand-info">
-                <div class="footer__brand-info-logo">
-                  <img src="src/images/logo-nl-white.png" alt="logo" />
-                </div>
-                <p class="font-body--md-400">
-                  Fresh groceries delivered to your door. Contact us for any assistance or inquiries.
-                </p>
-                <div class="footer__brand-info-contact">
-                  <a href="#"><span>(437) 955-2989</span></a>
-                  or
-                  <a href="#"><span>Help@binary.com</span></a>
-                </div>
-              </div>
+          <div class="terms-footer">
+            <div class="update-info">
+              <span class="update-label">Last Updated:</span>
+              <span class="update-date">November 17, 2024</span>
             </div>
-            <!-- My Account  -->
-            <div class="col-lg-2 col-md-3 col-6">
-              <ul class="footer__navigation">
-                <li class="footer__navigation-title">
-                  <h2 class="font-body--lg-500">My Account</h2>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="user-dashboard.html"> My Account </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="order-history.html"> order History </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="shopping-cart.html"> Shoping Cart </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="wishlist.html"> Wishlist </a>
-                </li>
-              </ul>
+            <div class="terms-contact">
+              <p>Have questions about our terms?</p>
+              <button class="button button--md">
+                Contact Support
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
             </div>
-            <!-- Helps  -->
-            <div class="col-lg-2 col-md-3 col-6">
-              <ul class="footer__navigation">
-                <li class="footer__navigation-title">
-                  <h2 class="font-body--lg-500">My Helps</h2>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="contact.html"> Contact </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="faq.html"> faq </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="terms-and-conditions.html"> Terms &amp; Condition </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="privacy-policy.html"> Privacy Policy </a>
-                </li>
-              </ul>
-            </div>
-            <!-- Company -->
-            <div class="col-lg-2 col-md-3 col-6">
-              <ul class="footer__navigation">
-                <li class="footer__navigation-title">
-                  <h2 class="font-body--lg-500">Company</h2>
-                </li>
-
-                <li class="footer__navigation-link">
-                  <a href="#"> Shop </a>
-                </li>
-                <li class="footer__navigation-link">
-                  <a href="product.html"> Product </a>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright-text">
-            buynery eCommerce © 2021. All Rights Reserved
-          </p>
-          <div class="footer__partner d-flex">
-            <a href="#" class="footer__partner-item">
-              <img src="src/images/brand-icon/img-01.png" alt="img" />
-            </a>
-            <a href="#" class="footer__partner-item">
-              <img src="src/images/brand-icon/img-02.png" alt="img" />
-            </a>
-            <a href="#" class="footer__partner-item">
-              <img src="src/images/brand-icon/img-03.png" alt="img" />
-            </a>
-            <a href="#" class="footer__partner-item">
-              <img src="src/images/brand-icon/img-04.png" alt="img" />
-            </a>
-            <a href="#" class="footer__partner-item">
-              <img src="src/images/brand-icon/img-05.png" alt="img" />
-            </a>
           </div>
         </div>
       </div>
-    </footer>
+  </section>
 
-    <!--Footer Section end  -->
 
-    <script src="src/lib/js/jquery.min.js"></script>
-    <script src="src/lib/js/swiper-bundle.min.js"></script>
-    <script src="src/lib/js/bvselect.js"></script>
-    <script src="src/lib/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/main.js"></script>
-    <!-- Purchase Button -->
+  <!--Footer Section Start  -->
+  <!--Footer Section Start  -->
+  <footer class="footer footer--one">
+    <div class="container">
+      <div class="footer__top">
+        <div class="row">
+          <!-- Brand information-->
+          <div class="col-lg-4">
+            <div class="footer__brand-info">
+              <div class="footer__brand-info-logo">
+                <img src="src/images/logo-nl-white.png" alt="logo" />
+              </div>
+              <p class="font-body--md-400">
+                Fresh groceries delivered to your door. Contact us for any assistance or inquiries.
+              </p>
+              <div class="footer__brand-info-contact">
+                <a href="#"><span>(437) 955-2989</span></a>
+                or
+                <a href="#"><span>Help@buynery.com</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- My Account  -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <ul class="footer__navigation">
+              <li class="footer__navigation-title">
+                <h2 class="font-body--lg-500">My Account</h2>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="user-dashboard.html"> My Account </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="order-history.html"> order History </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="shopping-cart.html"> Shoping Cart </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="wishlist.html"> Wishlist </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Helps  -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <ul class="footer__navigation">
+              <li class="footer__navigation-title">
+                <h2 class="font-body--lg-500">My Helps</h2>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="contact.html"> Contact </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="faq.html"> faq </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="terms-and-conditions.html"> Terms &amp; Condition </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="privacy-policy.html"> Privacy Policy </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Company -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <ul class="footer__navigation">
+              <li class="footer__navigation-title">
+                <h2 class="font-body--lg-500">Company</h2>
+              </li>
 
-  </body>
+              <li class="footer__navigation-link">
+                <a href="#"> Shop </a>
+              </li>
+              <li class="footer__navigation-link">
+                <a href="product.html"> Product </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright-text">
+          buynery eCommerce © 2021. All Rights Reserved
+        </p>
+        <div class="footer__partner d-flex">
+          <a href="#" class="footer__partner-item">
+            <img src="src/images/brand-icon/img-01.png" alt="img" />
+          </a>
+          <a href="#" class="footer__partner-item">
+            <img src="src/images/brand-icon/img-02.png" alt="img" />
+          </a>
+          <a href="#" class="footer__partner-item">
+            <img src="src/images/brand-icon/img-03.png" alt="img" />
+          </a>
+          <a href="#" class="footer__partner-item">
+            <img src="src/images/brand-icon/img-04.png" alt="img" />
+          </a>
+          <a href="#" class="footer__partner-item">
+            <img src="src/images/brand-icon/img-05.png" alt="img" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Footer Section end  -->
+
+  <script src="src/lib/js/jquery.min.js"></script>
+  <script src="src/lib/js/swiper-bundle.min.js"></script>
+  <script src="src/lib/js/bvselect.js"></script>
+  <script src="src/lib/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/main.js"></script>
+  <!-- Purchase Button -->
+
+</body>
 
 </html>

@@ -499,7 +499,6 @@ app.post("/create-order", authenticateToken, (req, res) => {
   const {
     firstName,
     lastName,
-    company,
     address,
     country,
     province,
@@ -524,7 +523,6 @@ app.post("/create-order", authenticateToken, (req, res) => {
       user = {
         firstName,
         lastName,
-        company,
         address,
         country,
         province,
@@ -537,7 +535,6 @@ app.post("/create-order", authenticateToken, (req, res) => {
       // Update existing user info
       user.firstName = firstName;
       user.lastName = lastName;
-      user.company = company;
       user.address = address;
       user.country = country;
       user.province = province;
